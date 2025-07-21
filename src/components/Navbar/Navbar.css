@@ -1,0 +1,23 @@
+.sidebar {
+  transform: translateX(100%);
+}
+
+.sidebar-open {
+  transform: translateX(0);
+}
+
+.sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navlink {
+  transition: color 0.3s ease;
+}
+
+.navlink:hover {
+  color: #1a73e8;
+}
+
+.btn {
+  transition: background-color 0.3s ease;
+}

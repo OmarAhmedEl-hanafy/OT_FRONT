@@ -1,0 +1,41 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+import { slidersData } from "./SliderInMiddleData";
+import SliderInMiddleDesc from "./SliderInMiddleDesc";
+import SliderInMiddleImg1 from "./SliderInMiddleImg1";
+import SliderInMiddleImg2 from "./SliderInMiddleImg2";
+import SliderInMiddleImg3 from "./SliderInMiddleImg3";
+import SliderInMiddleImg4 from "./SliderInMiddleImg4";
+import SliderInMiddleImg5 from "./SliderInMiddleImg5";
+import SliderInMiddleImg6 from "./SliderInMiddleImg6";
+
+function SliderInMiddle() {
+ 
+    const data = slidersData;
+
+    console.log(data);
+    
+
+  return (
+    <section className="my-[50px]">
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-4">
+          <div className="col-span-2">
+            {/* <SliderInMiddleImg1/> */}
+            {/* <SliderInMiddleImg2/> */}
+            {/* <SliderInMiddleImg3/> */}
+            {/* <SliderInMiddleImg4/> */}
+            {/* <SliderInMiddleImg5/> */}
+            <SliderInMiddleImg6 />
+          </div>
+
+          <div className="col-span-2">
+            <SliderInMiddleDesc sliderData={slidersData[0]} />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default SliderInMiddle;

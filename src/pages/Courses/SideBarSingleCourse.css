@@ -1,0 +1,24 @@
+.course-includes h2 {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.course-includes ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-includes li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.course-includes li i {
+  margin-right: 0.75rem;
+  color: #e63946; /* Or #1a2b4c based on your preferred color scheme */
+}
+
+.course-includes li span {
+  color: #333;
+}

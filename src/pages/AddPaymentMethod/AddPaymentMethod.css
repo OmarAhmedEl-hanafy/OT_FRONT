@@ -1,0 +1,142 @@
+/* Container */
+.payment-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 100%; */
+  /* gap: 2rem; */
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+
+  background-color: white;
+}
+
+/* Left section */
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.payment-image {
+  /* width: 500px; */
+  height: 600px !important;
+  border-radius: 15px;
+}
+
+/* Right section */
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 90%;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 0.5rem;
+}
+
+.form-group-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Button styles */
+.payment-btn {
+  background-color: #1a2b4c !important;
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  /* margin-top: 1rem; */
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  /* margin-bottom: 2rem; */
+  width: 70px;
+  color: #1a2b4c;
+}
+
+.error-text {
+  color: rgb(82, 82, 82);
+  font-size: 0.7rem;
+  /* margin-top: 0.2rem; */
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  color: gray;
+  text-align: center;
+}
+
+/* Animations */
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .payment-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .left-section {
+    display: none; /* Hide the left image on smaller screens */
+  }
+
+  .right-section {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

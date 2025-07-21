@@ -1,0 +1,130 @@
+.coaching-section {
+  padding: 2rem 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.back-button {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-button:hover {
+  color: #ff0000;
+}
+
+.course-title {
+  font-size: 24px;
+  color: #e63946;
+}
+
+.review-button {
+  background-color: transparent;
+  border: none;
+  color: #e63946;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.review-button:hover {
+  color: #a8323e;
+}
+
+.next-lecture-button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-lecture-button:hover {
+  background-color: #a8323e;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.video-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-info {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  /* color: #333; */
+}
+
+.student-info {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #4b4b4b;
+}
+
+.comments {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+.comments .space {
+  width: 79%;
+}
+
+/* Animations */
+.header .back-button:hover {
+  transform: translateX(-5px);
+}
+
+.video-player {
+  transition: all 0.3s ease;
+}
+
+.video-player:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}

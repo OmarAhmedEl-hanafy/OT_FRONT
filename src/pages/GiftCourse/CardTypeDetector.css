@@ -1,0 +1,73 @@
+/* GiftCourse.css */
+.payment-method-section {
+  margin-top: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* GiftCourse.css */
+
+.payment-method-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: #fff;
+}
+
+.payment-card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #00cc44;
+  border-radius: 8px;
+  background-color: #f0fff5;
+}
+
+.new-payment-option.selected {
+  border: 2px solid #00cc44;
+}
+
+.payment-fields {
+  margin-top: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.4s ease-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.submit-button {
+  margin-top: 2rem;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  width: 100%;
+  text-transform: none;
+}
+
+/* Custom styling for detected card type */
+.detected-card-type {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}

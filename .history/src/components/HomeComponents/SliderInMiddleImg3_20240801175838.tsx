@@ -1,0 +1,11 @@
+import img2 from "../../assets/images/slider-middle/img-3.png";
+
+function SliderInMiddleImg3() {
+  return (
+    <div className="relative h-[500px] w-[400px] mx-auto">
+      <img src={img2} alt="Middle Image" />
+    </div>
+  );
+}
+
+export default SliderInMiddleImg3;

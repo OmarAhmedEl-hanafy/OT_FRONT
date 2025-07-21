@@ -1,0 +1,173 @@
+.wwyg-section {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.wwyg-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wwyg-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.wwyg-image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+  transition-delay: 0.3s;
+}
+
+.wwyg-section.visible .wwyg-image-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.wwyg-student-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.wwyg-text-content {
+  text-align: left;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  transition-delay: 0.5s;
+}
+
+.wwyg-section.visible .wwyg-text-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.wwyg-heading {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1a2b4c;
+}
+
+.wwyg-highlight {
+  color: #4a90e2;
+}
+
+.wwyg-subtext {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #39433e !important;
+}
+
+.wwyg-list {
+  list-style: none;
+  padding: 0;
+}
+
+.wwyg-list-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f7f8fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.wwyg-section.visible .wwyg-list-item:nth-child(1) {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.7s;
+}
+
+.wwyg-section.visible .wwyg-list-item:nth-child(2) {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.9s;
+}
+
+.wwyg-section.visible .wwyg-list-item:nth-child(3) {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 1.1s;
+}
+
+.wwyg-icon {
+  font-size: 2.5rem;
+  color: #1a2b4c;
+  animation: bounceIn 0.8s ease;
+}
+
+.wwyg-list-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1a2b4c;
+}
+
+p {
+  font-size: 1rem;
+
+  margin-bottom: 5px;
+  color: #39433e;
+}
+.wwyg-read-more {
+  font-size: 0.9rem;
+  color: #1a2b4c;
+  cursor: pointer;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .wwyg-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .wwyg-text-content {
+    text-align: center;
+  }
+
+  .wwyg-list-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .wwyg-student-image {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,357 @@
+/* .coach-section {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.coach-content-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.coach-main-heading {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.coach-main-heading span {
+  color: #1a2b4c;
+}
+
+.coach-sub-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #6b7280;
+}
+
+.coach-cta-button {
+  background-color: #1a2b4c;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.coach-cta-button:hover {
+  background-color: #1a2b4c;
+}
+
+.coach-image-content {
+  flex: 1;
+  position: relative;
+}
+
+.coach-image-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.coach-main-image {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.coach-lessons-info {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 130px;
+  left: -60px;
+  background-color: #ffffff !important;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.coach-lessons-info img {
+  width: 15px;
+  height: 15px;
+}
+
+.coach-lessons-info span {
+  color: #1a2b4c;
+  font-size: 10px !important;
+  font-weight: bold !important;
+}
+.coach-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon1 .icon2 .icon3 .icon4 {
+  width: 50px;
+  height: 50px;
+}
+.icon1 {
+  position: absolute;
+  top: -110px;
+  left: 40px;
+}
+
+.icon2 {
+  position: absolute;
+  top: -35px;
+  right: -60px;
+}
+
+.icon3 {
+  position: absolute;
+  bottom: 20px;
+  left: -80px;
+}
+
+.icon4 {
+  position: absolute;
+  bottom: -1px;
+  right: -70px;
+} */
+
+.coach-section {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.coach-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.coach-content-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  padding: 20px;
+  transition: all 1s ease;
+}
+
+.coach-text-content {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.coach-section.visible .coach-text-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.coach-main-heading {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.coach-main-heading span {
+  color: #4a90e2; /* Highlighted word color */
+}
+
+.coach-sub-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #393c43;
+}
+
+.coach-cta-button {
+  background-color: #1a2b4c;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition-delay: 0.3s;
+}
+
+.coach-section.visible .coach-cta-button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.coach-cta-button:hover {
+  background-color: #ffffff;
+  color: #1a2b4c;
+  border: #1a2b4c 1px solid;
+  /* transition: background-color 0.3s ease, color 0.3s ease !important; */
+  transition-delay: 0.1s !important;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(3, 12, 139, 0.1);
+  text-decoration: none;
+}
+
+.coach-image-content {
+  flex: 1;
+  position: relative;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+  transition-delay: 0.5s;
+}
+
+.coach-section.visible .coach-image-content {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.coach-image-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  transform: rotate(-30deg);
+  transition: transform 1.2s ease;
+}
+
+.coach-section.visible .coach-image-container {
+  transform: rotate(0deg); /* Rotate into place */
+}
+
+.coach-main-image {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.coach-lessons-info {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 130px;
+  left: -60px;
+  background-color: #ffffff !important;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.coach-lessons-info img {
+  width: 15px;
+  height: 15px;
+}
+
+.coach-lessons-info span {
+  color: #4a90e2;
+  font-size: 10px !important;
+  font-weight: bold !important;
+}
+
+.coach-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.coach-section.visible .icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.icon1 {
+  position: absolute;
+  top: -110px;
+  left: 40px;
+  transition-delay: 0.7s;
+}
+
+.icon2 {
+  position: absolute;
+  top: -35px;
+  right: -60px;
+  transition-delay: 0.9s;
+}
+
+.icon3 {
+  position: absolute;
+  bottom: 20px;
+  left: -80px;
+  transition-delay: 1.1s;
+}
+
+.icon4 {
+  position: absolute;
+  bottom: -1px;
+  right: -70px;
+  transition-delay: 1.3s;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .coach-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .coach-image-container {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .coach-main-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+}

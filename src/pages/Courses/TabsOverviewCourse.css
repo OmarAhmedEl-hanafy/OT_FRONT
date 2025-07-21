@@ -1,0 +1,10 @@
+.tabsoverview button {
+  /* background-color: #ef4444; */
+  /* color: white; */
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  width: 25%;
+  transition: background-color 0.3s ease;
+}

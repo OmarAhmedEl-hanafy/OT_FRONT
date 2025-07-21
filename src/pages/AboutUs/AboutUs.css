@@ -1,0 +1,262 @@
+/* Section1 styling */
+.section1 {
+  padding-top: 90px;
+  background-color: #f9f9f9;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section1.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Content Wrapper with Bootstrap Grid */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+  gap: 50px;
+  align-items: center;
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.section1.visible .content-wrapper {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Text Content */
+.text-content {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section1.visible .text-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.small-heading {
+  font-family: "poppins";
+  color: #1a2b4c;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: 60px;
+  font-weight: bold;
+  color: #1a2b4c;
+  margin-bottom: 20px;
+}
+
+.main-heading span {
+  color: #4a90e2;
+}
+
+.sub-text {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #1a2b4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section1.visible .cta-button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image Content Animation */
+.image-content {
+  position: relative;
+  opacity: 0;
+  transform: scale(0.8) rotate(-5deg);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.section1.visible .image-content {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+/* Profile Image */
+.profile-image {
+  background-image: url("../../assets/images/OT/Omar_Tawfik.png");
+  width: 100%;
+  max-width: 550px; /* Set maximum width */
+  height: 620px; /* Fixed height */
+  background-size: cover;
+  background-position: center;
+  border-radius: 35%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Student Info Animation */
+.student-info {
+  position: absolute;
+  bottom: 20px;
+  left: -90px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Student Images Animation */
+.students-images {
+  display: flex;
+  align-items: center;
+}
+
+.students-images img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: -10px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.section1.visible .students-images img:nth-child(1) {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.section1.visible .students-images img:nth-child(2) {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.section1.visible .students-images img:nth-child(3) {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.section1.visible .students-images img:nth-child(4) {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.more-students {
+  background-color: #1a2b4c;
+  width: 50px;
+  height: 50px;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.section1.visible .more-students {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Responsive Layout using Grid */
+@media (max-width: 768px) {
+  .content-wrapper {
+    grid-template-columns: 1fr; /* Switch to single column */
+    gap: 20px; /* Smaller gap between elements */
+    text-align: center;
+  }
+
+  .image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 230px;
+    left: 120px;
+  }
+  .profile-image {
+    height: auto; /* Ensure the height adjusts based on content */
+    min-height: 350px;
+    max-width: 100%; /* Make it responsive */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  .student-info {
+    position: relative;
+    bottom: 20px;
+    left: 0;
+    margin-top: 20px;
+  }
+
+  .students-images img {
+    margin-right: 5px;
+  }
+
+  .more-students {
+    margin-left: 5px;
+  }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) rotate(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

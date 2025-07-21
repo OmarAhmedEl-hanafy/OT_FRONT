@@ -1,0 +1,109 @@
+/* Container */
+.gift-course-container {
+  padding-top: 100px !important;
+  display: grid;
+  gap: 2rem;
+  /* max-width: 700px; */
+  margin: 0 auto;
+  padding: 5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.custom-input .material-textfield input {
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.custom-input label {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.custom-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  color: #6c757d;
+}
+
+/* Payment Method Section */
+.payment-method-section {
+  margin-top: 2rem;
+}
+
+.payment-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.new-payment-option {
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.selected {
+  border-width: 2px;
+  border-color: #28a745;
+}
+
+.payment-option .payment-details {
+  display: flex;
+  align-items: center;
+}
+
+.payment-option .payment-details span {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.payment-option .payment-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 40px;
+}
+
+.visa-icon,
+.mastercard-icon,
+.paypal-icon,
+.new-payment-icon {
+  /* background: url("/path-to-icons/mastercard.svg") no-repeat center; */
+  width: 40px;
+  height: 25px;
+}
