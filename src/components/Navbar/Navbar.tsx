@@ -266,13 +266,13 @@ const Navbar = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
         if (ref && "current" in ref && ref.current) {
           const parentElement = ref.current as HTMLElement;
 
-          if (window.scrollY > 130) {
+          if (window.scrollY > 60) {
             parentElement.style.background = "#ffffff";
-            parentElement.style.padding = "5px 10px";
+            parentElement.style.padding = "5px 5px";
             parentElement.style.boxShadow = "0 0 15px 0 #3361A050";
           } else {
             parentElement.style.background = "transparent";
-            parentElement.style.padding = "15px 10px";
+            parentElement.style.padding = "5px 5px";
             parentElement.style.boxShadow = "none";
           }
         }
@@ -293,7 +293,7 @@ const Navbar = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
     const userInitial = username.charAt(0).toUpperCase();
 
     // Memoized Logo component
-    const logoMemo = useMemo(() => <Logo height={60} />, []);
+    const logoMemo = useMemo(() => <Logo />, []);
 
     return (
       <nav
@@ -395,7 +395,7 @@ const Navbar = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
                   >
                     <i className="fa fa-times" />
                   </button>
-                  <ul className="mt-6">
+                  <ul className="mt-2">
                     <li className="py-2">
                       <NavLink
                         to="/MainDashboard"

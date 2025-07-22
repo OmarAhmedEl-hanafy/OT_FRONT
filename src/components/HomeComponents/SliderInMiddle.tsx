@@ -41,9 +41,7 @@ function SliderInMiddle() {
         <Slider {...settings1}>
           {data.map((item, index) => (
             <div key={index} className="!grid !grid-cols-1 md:!grid-cols-4">
-              <div className="col-span-2">
-                {imgsComponents[index]}
-              </div>
+              <div className="col-span-2">{imgsComponents[index]}</div>
 
               <div className="col-span-2">
                 <SliderInMiddleDesc sliderData={item} />

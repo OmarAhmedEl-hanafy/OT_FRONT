@@ -1,6 +1,6 @@
 /* Section1 styling */
 .section1 {
-  padding-top: 90px;
+  /* padding-top: 90px; */
   background-color: #f9f9f9;
   opacity: 0;
   transform: translateY(50px);
@@ -8,6 +8,7 @@
 }
 
 .section1.visible {
+  padding-top: 120px;
   opacity: 1;
   transform: translateY(0);
 }

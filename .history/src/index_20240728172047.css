@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 :root {
-  --main-color: rgb(160,40,41); /*#A02829*/
+  --main-color: rgb(160, 40, 41); /*#A02829*/
   --second-color: rgb(0, 0, 0);
   --bg-main: #f5fcff;
   --text-color: #161439;
@@ -46,7 +46,7 @@
 
   .btn-more {
     background: #32609e;
-    box-shadow: 4px 6px 0px #9F2929;
+    box-shadow: 4px 6px 0px #9f2929;
     border-radius: 50px;
     color: #ffffff !important;
     font-weight: bold;
@@ -107,7 +107,8 @@ img {
 .btn-white::after {
   position: absolute;
   content: attr(data-content);
-  width: 5px;
+  width: 100%;
+
   height: 100%;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;

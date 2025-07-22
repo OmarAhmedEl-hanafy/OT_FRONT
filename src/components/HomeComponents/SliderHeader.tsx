@@ -16,7 +16,7 @@ function Carousel() {
   const settings1 = {
     autoplay: true,
     autoplaySpeed: 10000,
-    pauseOnHover:false,
+    pauseOnHover: false,
     vertical: true,
     arrows: false,
     infinite: true,
@@ -29,7 +29,7 @@ function Carousel() {
   const settings2 = {
     autoplay: true,
     autoplaySpeed: 10000,
-    pauseOnHover:false,
+    pauseOnHover: false,
     arrows: false,
     infinite: true,
     speed: 2000,
@@ -131,7 +131,7 @@ function Carousel() {
           </Slider>
         </div>
 
-        <div className="absolute top-0 w-full h-full flex place-items-center text-main-color bg-white bg-opacity-5 ">
+        <div className="absolute top-0 w-full h-full flex place-items-center text-main-color bg-opacity-5 ">
           <div className="border-2 border-white">
             <div className="navs absolute bottom-[10px] left-[30%] md:bottom-[50px] md:left-[55%] translate-x-1/4 flex gap-5">
               <button
@@ -151,7 +151,7 @@ function Carousel() {
 
               <div className="count-item text-white flex items-center font-bold">
                 <p className="">
-                  <span>0{currentIndex+1}</span> - <span>05</span>
+                  <span>0{currentIndex + 1}</span> - <span>05</span>
                 </p>
               </div>
             </div>
