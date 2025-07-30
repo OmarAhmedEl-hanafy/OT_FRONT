@@ -174,7 +174,7 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from "@material-tailwind/react";
-import signImg from "../../assets/images/sign.png";
+import signImg from "../../assets/images/OT/OT_Logo.png";
 import Logo from "../../components/Logo/Logo";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -235,16 +235,16 @@ function Login() {
   });
 
   return (
-    <section className="h-screen bg-white flex items-center">
+    <section className="bg-white flex items-center">
       <div className="container">
-        <div className="grid md:grid-cols-7 justify-between  md:gap-5 lg:gap-16">
-          <div className="p-5 md:p-0 col-span-7 md:pr-5 md:col-span-3">
-            <div className="">
-              <Logo height={90} />
+        <div className="grid md:grid-cols-7 justify-between md:gap-5 lg:gap-16">
+          <div className="p-5 md:p-0 col-span-7 md:pt-5 md:col-span-3">
+            <div className="pt-12">
+              <Logo />
             </div>
 
             <h1 className="text-4xl font-bold pl-3 mt-2">Login</h1>
-            <p className="pl-3 mt-2">Login to access your Golobe account</p>
+            <p className="pl-3 mt-2">Login to access your Global Account</p>
 
             <div className="sign-up-form">
               <form
@@ -295,8 +295,8 @@ function Login() {
             </div>
           </div>
           <div className="hidden md:block col-span-7 md:col-span-4">
-            <div className="img-sign h-[600px] rounded-[30px] overflow-hidden border border-main-color">
-              <img className="" src={signImg} alt="SignUp" />
+            <div className="img-sign h-[715px] overflow-hidden">
+              <img className="" src={signImg} alt="SignIn" />
             </div>
           </div>
         </div>

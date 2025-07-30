@@ -12,10 +12,11 @@ function AssistantDetails({ assistant }: props) {
 
   return (
     <div className="grid md:grid-cols-2 items-center mt-5 gap-y-5">
-      <div
-        className=""
-      >
-        <div style={{ boxShadow: "8px 8px 0px #9F2929" }} className="box-border border border-[#C9E4E9] border-l-0 rounded-[20px] rounded-l-none px-10 w-[65%] h-[350px] mx-auto">
+      <div className="">
+        <div
+          style={{ boxShadow: "8px 8px 0px #1a2b4c" }}
+          className="box-border border border-[#C9E4E9] border-l-0 rounded-[20px] rounded-l-none px-10 w-[65%] h-[350px] mx-auto"
+        >
           <img
             className=""
             src={assistant.instructorPhoto}

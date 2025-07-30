@@ -1,5 +1,5 @@
 // import imgCons from "../../assets/images/consulting.svg";
-import imgRs from "../../assets/images/assitants/RS/rs-3.jpg";
+import imgOt from "../../assets/images/OT/omar_pic.jpg";
 import ButtonMore from "../ButtonMore/ButtonMore";
 import HighLight from "../HighLight/HighLight";
 import Consult from "./Consult";
@@ -117,11 +117,14 @@ function FreeConsulting() {
         <div className="grid md:grid-cols-2 gap-3 px-3">
           <div className="px-[50px] lg:px-[100px]">
             {/* <img className="" src={imgCons} alt="Consulting" /> */}
-            <div className="hidden md:block relative">
+            <div className="md:block relative">
+              {/* <div className="hidden md:block relative"> */}
+
               <img
                 className="rounded-tl-[100px] h-[400px]"
-                src={imgRs}
+                src={imgOt}
                 alt="Consulting"
+                style={{ objectFit: "cover" }}
               />
               <div className="absolute top-0 left-0 h-1/2 w-1/2 -z-10 rounded-tl-[50px] border-2 border-main-color -translate-x-4 -translate-y-4 lg:-translate-x-7 lg:-translate-y-7"></div>
               <div className="absolute bottom-0 right-0 h-1/2 w-1/2 -z-10 rounded-br-[50px] border-2 border-main-color translate-x-7 translate-y-7 lg:translate-x-10 lg:translate-y-10"></div>

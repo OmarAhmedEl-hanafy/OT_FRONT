@@ -61,7 +61,7 @@ function Carousel() {
             <div className="h-[450px] relative ">
               {/* <img className="w-full h-full" src={img1} alt="" /> */}
               <div className="desc mt-[70px] absolute bottom-0 left-[50px] md:w-1/2 md:bottom-auto flex flex-col justify-center">
-                <h2 className="text-main-color text-xl md:text-2xl lg:text-4xl md:leading-10 tracking-[3px] md:w-[75%] font-extrabold">
+                <h2 className="text-main-color text-2xl md:text-2xl lg:text-6xl md:leading-10 tracking-[3px] md:w-[90%] font-extrabold">
                   Transform your life with personalized coaching.
                 </h2>
                 <p className="w-[90%] hidden md:block tracking-[2px] text-black/95 mt-5">
@@ -74,7 +74,7 @@ function Carousel() {
             <div className="h-[450px] relative">
               {/* <img className="w-full h-full" src={img2} alt="" /> */}
               <div className="desc mt-[70px] absolute bottom-0 left-[50px] md:w-1/2 md:bottom-auto flex flex-col justify-center">
-                <h2 className="text-main-color text-xl md:text-2xl lg:text-4xl md:leading-10 tracking-[3px] md:w-[75%] font-extrabold">
+                <h2 className="text-main-color text-xl md:text-2xl lg:text-6xl md:leading-10 tracking-[3px] md:w-[90%] font-extrabold">
                   Achieve your goals and live your best life with expert
                   coaching.
                 </h2>
@@ -89,7 +89,7 @@ function Carousel() {
             <div className="h-[450px] relative">
               {/* <img className="w-full h-full" src={img3} alt="" /> */}
               <div className="desc mt-[70px] absolute bottom-0 left-[50px] md:w-1/2 md:bottom-auto flex flex-col justify-center">
-                <h2 className="text-main-color text-xl md:text-2xl lg:text-4xl md:leading-10 tracking-[3px] md:w-[75%] font-extrabold">
+                <h2 className="text-main-color text-xl md:text-2xl lg:text-6xl md:leading-10 tracking-[3px] md:w-[90%] font-extrabold">
                   Realize Your Dreams and Excel with Professional Coaching.
                 </h2>
 
@@ -104,7 +104,7 @@ function Carousel() {
             <div className="h-[450px] relative">
               {/* <img className="w-full h-full" src={img4} alt="" /> */}
               <div className="desc mt-[70px] absolute bottom-0 left-[50px] md:w-1/2 md:bottom-auto flex flex-col justify-center">
-                <h2 className="text-main-color text-xl md:text-2xl lg:text-4xl md:leading-10 tracking-[3px] md:w-[75%] font-extrabold">
+                <h2 className="text-main-color text-xl md:text-2xl lg:text-6xl md:leading-10 tracking-[3px] md:w-[90%] font-extrabold">
                   Embrace elegance, ignite adventure, relish serenity, savor.
                 </h2>
                 <p className="w-[90%] hidden md:block tracking-[2px] text-black/95 mt-5">
@@ -117,7 +117,7 @@ function Carousel() {
             <div className="h-[450px] relative">
               {/* <img className="w-full h-full" src={img5} alt="" /> */}
               <div className="desc mt-[70px] absolute bottom-0 left-[50px] md:w-1/2 md:bottom-auto flex flex-col justify-center">
-                <h2 className="text-main-color text-xl md:text-2xl lg:text-4xl md:leading-10 tracking-[3px] md:w-[75%] font-extrabold">
+                <h2 className="text-main-color text-xl md:text-2xl lg:text-6xl md:leading-10 tracking-[3px] md:w-[90%] font-extrabold">
                   Enter the realm, luxuriate in opulence, depart.
                 </h2>
                 <p className="w-[90%] hidden md:block tracking-[2px] text-black/95 mt-5">
@@ -131,9 +131,9 @@ function Carousel() {
           </Slider>
         </div>
 
-        <div className="absolute top-0 w-full h-full flex place-items-center text-main-color bg-opacity-5 ">
+        <div className="absolute top-0 w-full h-full flex place-items-center text-main-color bg-opacity-5 pl-[0px] md:pl-[100px]">
           <div className="border-2 border-white">
-            <div className="navs absolute bottom-[10px] left-[30%] md:bottom-[50px] md:left-[55%] translate-x-1/4 flex gap-5">
+            <div className="navs absolute bottom-[10px] left-[30%] md:bottom-[5px] md:left-[65%] translate-x-1/4 flex gap-5">
               <button
                 onClick={previous}
                 type="button"
@@ -156,7 +156,7 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div className="max-w-max max-h-max ">
+          <div className="max-w-max max-h-max">
             <div className="w-[100vw]">
               <Slider
                 ref={(slider) => {
@@ -165,28 +165,56 @@ function Carousel() {
                 {...settings2}
               >
                 <div className="">
-                  <div className="h-[300px]  md:max-w-[350px] lg:max-w-[488px] m-auto  md:translate-x-[50%]">
-                    <img className="w-full h-full" src={img1} alt="" />
+                  <div className="h-[350px] md:max-w-[400px] lg:max-w-[488px] m-auto right-1 md:translate-x-[50%]">
+                    <img
+                      className="w-full h-full"
+                      src={img1}
+                      alt=""
+                      style={{ objectFit: "fill", borderRadius: "20px" }}
+                    />
                   </div>
                 </div>
                 <div className="">
-                  <div className="h-[300px]   md:max-w-[350px] lg:max-w-[488px] m-auto md:translate-x-[50%]">
-                    <img className="w-full h-full" src={img2} alt="" />
+                  <div className="h-[350px] md:max-w-[400px] lg:max-w-[488px] m-auto md:translate-x-[50%]">
+                    <img
+                      className="w-full h-full"
+                      src={img2}
+                      alt=""
+                      style={{ objectFit: "fill", borderRadius: "20px" }}
+                    />
                   </div>
                 </div>
                 <div className="">
-                  <div className="h-[300px]   md:max-w-[350px] lg:max-w-[488px] m-auto md:translate-x-[50%]">
-                    <img className="w-full h-full" src={img3} alt="" />
+                  <div className="h-[350px] md:max-w-[400px] lg:max-w-[488px] m-auto md:translate-x-[50%]">
+                    <img
+                      className="w-full h-full"
+                      src={img3}
+                      alt=""
+                      style={{ objectFit: "fill", borderRadius: "20px" }}
+                    />
                   </div>
                 </div>
                 <div className="">
-                  <div className="h-[300px]   md:max-w-[350px] lg:max-w-[488px] m-auto md:translate-x-[50%]">
-                    <img className="w-full h-full" src={img4} alt="" />
+                  <div className="h-[350px] md:max-w-[400px] lg:max-w-[488px] m-auto md:translate-x-[50%]">
+                    <img
+                      className="w-full h-full"
+                      src={img4}
+                      alt=""
+                      style={{ objectFit: "fill", borderRadius: "20px" }}
+                    />
                   </div>
                 </div>
                 <div className="">
-                  <div className="h-[300px]   md:max-w-[350px] lg:max-w-[488px] m-auto md:translate-x-[50%]">
-                    <img className="w-full h-full" src={img5} alt="" />
+                  <div className="h-[350px] md:max-w-[400px] lg:max-w-[488px] m-auto md:translate-x-[50%]">
+                    <img
+                      className="w-full h-full"
+                      src={img5}
+                      alt=""
+                      style={{
+                        objectFit: "fill",
+                        borderRadius: "20px",
+                      }}
+                    />
                   </div>
                 </div>
               </Slider>

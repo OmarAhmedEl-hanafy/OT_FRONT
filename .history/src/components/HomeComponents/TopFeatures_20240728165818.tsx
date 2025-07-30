@@ -13,7 +13,7 @@ function TopFeatures() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect y="0.219971" width="70" height="70" rx="35" fill="#9F2929" />
+          <rect y="0.219971" width="70" height="70" rx="35" fill="#1a2b4c" />
           <g clipPath="url(#clip0_6_519)">
             <mask
               id="mask0_6_519"
@@ -68,7 +68,7 @@ function TopFeatures() {
       desc: "Our experienced coaches provide personalized one-on-one coaching to help you achieve your goals",
       bg: "#F1FDFF",
       border: "#c9e4e9",
-      boxShadow: "#9F2929",
+      boxShadow: "#1a2b4c",
     },
     {
       icon: (
@@ -79,7 +79,7 @@ function TopFeatures() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect y="0.219971" width="70" height="70" rx="35" fill="#9F2929" />
+          <rect y="0.219971" width="70" height="70" rx="35" fill="#1a2b4c" />
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -98,7 +98,7 @@ function TopFeatures() {
       desc: "Our experienced coaches provide personalized one-on-one coaching to help you achieve your goals",
       bg: "#C6DEFF",
       border: "#C8C1ED",
-      boxShadow: "#9F2929",
+      boxShadow: "#1a2b4c",
     },
     {
       icon: (
@@ -109,7 +109,7 @@ function TopFeatures() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect y="0.219971" width="70" height="70" rx="35" fill="#9F2929" />
+          <rect y="0.219971" width="70" height="70" rx="35" fill="#1a2b4c" />
           <path
             d="M34.5 32.4166C37.9058 32.4166 40.6667 29.6557 40.6667 26.2499C40.6667 22.8442 37.9058 20.0833 34.5 20.0833C31.0943 20.0833 28.3333 22.8442 28.3333 26.2499C28.3333 29.6557 31.0943 32.4166 34.5 32.4166Z"
             stroke="white"
@@ -137,7 +137,7 @@ function TopFeatures() {
       desc: "Our experienced coaches provide personalized one-on-one coaching to help you achieve your goals",
       bg: "#FFF7E2",
       border: "#EBE0C4",
-      boxShadow: "#9F2929",
+      boxShadow: "#1a2b4c",
     },
   ];
 

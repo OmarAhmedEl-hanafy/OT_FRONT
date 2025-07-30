@@ -62,7 +62,7 @@ const CourseCard: React.FC<CourseProps> = ({
         <button
           className="text-red-900 font-semibold px-4 py-2 rounded hover:!bg-red-900 hover:!text-white transition-all"
           style={{
-            backgroundColor: "#FFE0D8",
+            backgroundColor: "#1a2b4c",
             width: progress > 0 ? "auto" : "100%",
           }}
         >

@@ -62,7 +62,7 @@ const CourseCard: React.FC<CourseProps> = ({
         <button
           className="text-red-900 font-semibold px-4 py-2 rounded hover:bg-red-900 hover:text-white transition-all"
           style={{
-            backgroundColor: "#FFE0D8",
+            backgroundColor: "#1a2b4c",
             width: progress > 0 ? "auto" : "100%",
           }}
         >
@@ -85,7 +85,7 @@ const Dashboard: React.FC = () => {
       <h2 className="text-2xl font-bold pt-8">Dashboard</h2>
 
       <div className="dashboard-stats grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
-        <div className="stat-box bg-[#FFE0D8] p-6 rounded-lg flex items-center">
+        <div className="stat-box bg-[#1a2b4c] p-6 rounded-lg flex items-center">
           <div className="stat-icon w-14 h-14 bg-white rounded-md flex justify-center items-center mr-4">
             <i className="fas fa-play-circle text-red-600 text-2xl"></i>
           </div>

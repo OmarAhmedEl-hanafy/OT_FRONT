@@ -56,14 +56,14 @@ function SingleCourse() {
                     <img
                       className="h-10 w-10 md:h-16 md:w-16 -mx-2.5 ring ring-white dark:ring-gray-900 rounded-full object-cover"
                       src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=880&h=880&q=100"
-                      alt="RS"
+                      alt="OT"
                     />
                     {myCourse.instructors.map((inst: any, ind: number) => (
                       <img
                         key={ind}
                         className="h-10 w-10 md:h-16 md:w-16 -mx-1.5 md:-mx-2.5 ring ring-white dark:ring-gray-900 rounded-full object-cover"
                         src={inst.instructorPhoto}
-                        alt="RS"
+                        alt="OT"
                       />
                     ))}
                   </div>

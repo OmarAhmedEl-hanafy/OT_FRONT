@@ -10,7 +10,7 @@
 
 :root {
   --main-color: rgb(26, 43, 76); /*#A02829*/
-  --second-color: rgb(0, 0, 0);
+  --second-color: rgb(74, 144, 226);
   --bg-main: #f5fcff;
   --text-color: #1a2b4c;
 }
@@ -67,6 +67,10 @@ body {
 .text-main-color {
   color: var(--text-color);
   opacity: 0.9;
+}
+
+.text-second-color {
+  color: var(--second-color);
 }
 
 .bg-main-color {

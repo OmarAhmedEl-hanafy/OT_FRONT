@@ -128,8 +128,8 @@ function FreeConsulting() {
             </div>
           </div>
 
-          <div className="pl-[50px]">
-            <div className="">
+          <div className="pl-[50px]" style={{ color: "white !important" }}>
+            <div className="text-white" style={{ color: "white !important" }}>
               <HighLight text="Free Consulting" />
             </div>
 

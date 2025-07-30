@@ -7,7 +7,7 @@ function LoadingPage() {
         visible={true}
         height="80"
         width="80"
-        color="rgb(160,40,41)"
+        color="rgb(26,43,76)"
         ariaLabel="grid-loading"
         radius="12.5"
         wrapperStyle={{}}

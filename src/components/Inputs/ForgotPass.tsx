@@ -6,7 +6,7 @@ function ForgotPasswordLink() {
     <div className="text-right mt-2">
       <Link
         to="/ForgotPassword"
-        className="font-medium text-[14px] text-red-400 hover:text-blue-700 transition-colors"
+        className="font-medium text-[14px] text-blue-300 hover:text-blue-900 transition-colors"
         style={{ color: "blue" }}
       >
         {" "}

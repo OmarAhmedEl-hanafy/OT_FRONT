@@ -7,11 +7,15 @@
 @tailwind utilities;
 
 :root {
-  --main-color: rgb(160, 40, 41); /*#A02829*/
-  --second-color: rgb(0, 0, 0);
+  --main-color: rgb(26, 43, 76); /*#A02829*/
+  --second-color: rgb(74, 144, 226);
   --bg-main: #f5fcff;
   --text-color: #161439;
 }
+
+/* "main-color": "rgb(26,43,76)", */
+/* "bg-main": "#f5fcff", */
+/* "second-color": "rgb(74,144,226)", */
 
 @layer {
   .container {
@@ -19,7 +23,7 @@
   }
 
   .bg-gradient {
-    background: linear-gradient(180deg, #a02828bd 0%, #d4dce8 100%);
+    background: linear-gradient(180deg, #1a2b4cbd 0%, #d4dce8 100%);
   }
 
   .bg-gradient-line {

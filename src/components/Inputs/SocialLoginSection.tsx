@@ -17,7 +17,7 @@ function SocialLoginSection() {
         onPointerLeaveCapture={undefined}
       >
         Don’t have an account?{" "}
-        <Link to="/auth/register" className="text-red-400 hover:text-blue-700">
+        <Link to="/auth/register" className="text-blue-400 hover:text-blue-900">
           Sign up
         </Link>
       </Typography>
@@ -32,7 +32,7 @@ function SocialLoginSection() {
         {/* Facebook */}
         <button
           onClick={() => handleSocialLogin("facebook")}
-          className="border-2 border-red-400 p-3 rounded-lg w-16 h-16 flex items-center justify-center hover:bg-red-50"
+          className="border-2 border-gray-400 p-3 rounded-lg w-16 h-16 flex items-center justify-center hover:bg-gray-200"
           style={{ width: "100%" }}
         >
           <FaFacebookF size={25} className="text-blue-600" />
@@ -41,7 +41,7 @@ function SocialLoginSection() {
         {/* Google */}
         <button
           onClick={() => handleSocialLogin("google")}
-          className="border-2 border-red-400 p-3 rounded-lg w-16 h-16 flex items-center justify-center hover:bg-red-50"
+          className="border-2 border-gray-400 p-3 rounded-lg w-16 h-16 flex items-center justify-center hover:bg-gray-200"
           style={{ width: "100%" }}
         >
           <FaGoogle size={25} className="text-red-500" />
@@ -50,7 +50,7 @@ function SocialLoginSection() {
         {/* Apple */}
         <button
           onClick={() => handleSocialLogin("apple")}
-          className="border-2 border-red-400 p-3 rounded-lg w-16 h-16 flex items-center justify-center hover:bg-red-50"
+          className="border-2 border-gray-400 p-3 rounded-lg w-16 h-16 flex items-center justify-center hover:bg-gray-200"
           style={{ width: "100%" }}
         >
           <FaApple size={25} className="text-black" />

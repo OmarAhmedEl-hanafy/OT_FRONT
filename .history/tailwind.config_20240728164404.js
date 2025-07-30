@@ -14,8 +14,8 @@ export default withMT({
           "linear-gradient(  180deg,rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.3) 100%)",
       }),
       boxShadow: {
-        'custom-light': '0 0 10px 0px rgba(0, 0, 0, 0.1)',
-        'custom-dark': '0 0 10px 0px rgba(0, 0, 0, 0.2)',
+        "custom-light": "0 0 10px 0px rgba(0, 0, 0, 0.1)",
+        "custom-dark": "0 0 10px 0px rgba(0, 0, 0, 0.2)",
       },
     },
     screens: {
@@ -26,14 +26,13 @@ export default withMT({
       "2xl": "1400px",
     },
     colors: {
-      "main-color": "rgb(160,40,41)",
+      "main-color": "rgb(26,43,76)",
       "bg-main": "#f5fcff",
-      "second-color": "rgb(255,194,36)",
-      "white": "#ffffff",
-      "black":"#000000",
-      "transparent":"transparent"
+      "second-color": "rgb(74,144,226)",
+      white: "#ffffff",
+      black: "#000000",
+      transparent: "transparent",
     },
-   
   },
   plugins: [],
 });

@@ -47,7 +47,7 @@ function MoreAboutUs() {
               className="img-rs h-[450px] max-w-[562px] rounded-full overflow-hidden"
               style={{ boxShadow: "9px 8px 0px #A02829" }}
             >
-              <img src={ramy} alt="RS" />
+              <img src={ramy} alt="OT" />
             </div>
             <div className="absolute -top-[7%] md:-top-[10%] left-0 w-full px-5  md:px-10">
               <img

@@ -1,6 +1,10 @@
 import { Checkbox, Typography } from "@material-tailwind/react";
 
-function CheckboxWithLink({ link }: any) {
+interface CheckboxWithLinkProps {
+  link: string;
+}
+
+function CheckboxWithLink({ link }: CheckboxWithLinkProps) {
   return (
     <Checkbox
       label={
@@ -20,7 +24,7 @@ function CheckboxWithLink({ link }: any) {
             href={link}
             target="_blank"
             color="blue"
-            className="font-medium transition-colors text-red-400 hover:text-blue-700 text-[14px]"
+            className="font-medium transition-colors text-blue-400 hover:text-blue-900 text-[14px]"
           >
             &nbsp;terms and conditions
           </Typography>

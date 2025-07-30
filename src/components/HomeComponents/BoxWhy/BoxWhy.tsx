@@ -23,7 +23,7 @@ function PopularCourses({ boxWhy }: any) {
       variants={divLeftVariants}
       initial="hidden"
       animate={`${isInView ? "visible" : ""}`}
-      transition={{ ease:"backIn", duration: 1, delay: 0.3 }}
+      transition={{ ease: "backIn", duration: 1, delay: 0.3 }}
       className={`box-hover ${
         boxWhy.title === "Spiritual side" || boxWhy.title === "Family side"
           ? "box-why"

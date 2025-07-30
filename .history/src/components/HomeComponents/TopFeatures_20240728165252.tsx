@@ -13,7 +13,7 @@ function TopFeatures() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect y="0.219971" width="70" height="70" rx="35" fill="#9F2929" />
+          <rect y="0.219971" width="70" height="70" rx="35" fill="#1a2b4c" />
           <g clipPath="url(#clip0_6_519)">
             <mask
               id="mask0_6_519"

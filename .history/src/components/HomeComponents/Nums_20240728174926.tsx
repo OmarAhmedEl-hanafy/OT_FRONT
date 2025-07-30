@@ -1,6 +1,5 @@
-
-import CountUp from 'react-countup';
-import numImg from '../../assets/images/numsImg.png';
+import CountUp from "react-countup";
+import numImg from "../../assets/images/numsImg.png";
 
 function Nums() {
   return (
@@ -38,7 +37,10 @@ function Nums() {
           <div className="relative grid md:grid-cols-2 gap-5 text-center">
             <div className="text-5xl font-semibold flex flex-col">
               <span>
-                <span><CountUp end={20} duration={2} enableScrollSpy={true} /></span>K+
+                <span>
+                  <CountUp end={20} duration={2} enableScrollSpy={true} />
+                </span>
+                K+
               </span>
               <span className="text-xl font-[300]">Countries</span>
             </div>
@@ -47,14 +49,20 @@ function Nums() {
 
             <div className="text-5xl font-semibold flex flex-col">
               <span>
-                <span><CountUp end={1000} duration={2} enableScrollSpy={true} /></span>+
+                <span>
+                  <CountUp end={1000} duration={2} enableScrollSpy={true} />
+                </span>
+                +
               </span>
               <span className="text-xl font-[300]">Clients</span>
             </div>
 
             <div className="text-5xl font-semibold flex flex-col">
               <span>
-                <span><CountUp end={600} duration={2} enableScrollSpy={true} /></span>+
+                <span>
+                  <CountUp end={600} duration={2} enableScrollSpy={true} />
+                </span>
+                +
               </span>
               <span className="text-xl font-[300]">Team</span>
             </div>
@@ -63,14 +71,17 @@ function Nums() {
 
             <div className="text-5xl font-semibold flex flex-col">
               <span>
-                <span><CountUp end={4} duration={2} enableScrollSpy={true} /></span>+
+                <span>
+                  <CountUp end={4} duration={2} enableScrollSpy={true} />
+                </span>
+                +
               </span>
               <span className="text-xl font-[300]">Office</span>
             </div>
           </div>
 
           <div className="">
-            <img src={numImg} alt="RS" />
+            <img src={numImg} alt="OT" />
           </div>
         </div>
       </div>

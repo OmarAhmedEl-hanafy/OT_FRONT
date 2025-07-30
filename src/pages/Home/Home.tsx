@@ -19,13 +19,13 @@ const FreeConsulting = lazy(
   () => import("../../components/HomeComponents/FreeConsulting")
 );
 const Nums = lazy(() => import("../../components/HomeComponents/Nums"));
-const AssistantCoach = lazy(
-  () => import("../../components/HomeComponents/AssistantCoach")
-);
+// const AssistantCoach = lazy(
+//   () => import("../../components/HomeComponents/AssistantCoach")
+// );
 const StudentFeedback = lazy(
   () => import("../../components/HomeComponents/StudentFeedback")
 );
-const Blogs = lazy(() => import("../../components/HomeComponents/Blogs"));
+// const Blogs = lazy(() => import("../../components/HomeComponents/Blogs"));
 const Achievement = lazy(
   () => import("../../components/HomeComponents/Achievement")
 );
@@ -58,17 +58,17 @@ function Home() {
         <Suspense fallback={""}>
           <Nums />
         </Suspense>
-        <Suspense fallback={""}>
+        {/*<Suspense fallback={""}>
           <AssistantCoach />
-        </Suspense>
+        </Suspense>*/}
         <Suspense fallback={""}>
           <StudentFeedback />
         </Suspense>
         <Suspense fallback={""}>
           <Achievement />
-        </Suspense>
+          {/*</Suspense>
         <Suspense fallback={""}>
-          <Blogs />
+          <Blogs />*/}
         </Suspense>
       </div>
     </>

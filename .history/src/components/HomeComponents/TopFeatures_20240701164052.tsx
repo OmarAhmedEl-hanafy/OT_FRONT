@@ -147,8 +147,14 @@ function TopFeatures() {
   return (
     <section className="mt-[100px]">
       <div className="container">
-        <div className="flex justify-center">
-          <HighLight text={" Our Top Features"} />
+        <div
+          className="flex justify-center"
+          style={{ color: "white !important" }}
+        >
+          <HighLight
+            text={" Our Top Features"}
+            style={{ color: "white !important" }}
+          />
         </div>
         <h2 className="text-xl md:text-2xl font-bold text-center mt-3 font-poppins ">
           <AnimationText

@@ -1,5 +1,5 @@
 import { motion, useInView } from "framer-motion";
-import ramy from "../../assets/images/assitants/RS/rs-7.jpg";
+import omar from "../../assets/images/OT/OT_Logo.png";
 import word from "../../assets/images/aboutUsImg.svg";
 import ButtonMore from "../ButtonMore/ButtonMore";
 import HighLight from "../HighLight/HighLight";
@@ -45,9 +45,9 @@ function MoreAboutUs() {
           >
             <div
               className="img-rs h-[450px] max-w-[562px] rounded-full overflow-hidden"
-              style={{ boxShadow: "9px 8px 0px #A02829" }}
+              style={{ boxShadow: "9px 8px 0px #1A2B4C" }}
             >
-              <img src={ramy} alt="RS" />
+              <img src={omar} alt="OT" style={{ objectFit: "inherit" }} />
             </div>
             <div className="absolute -top-[7%] md:-top-[10%] left-0 w-full px-5  md:px-10">
               <img
@@ -118,7 +118,7 @@ function MoreAboutUs() {
                         <feComposite in2="hardAlpha" operator="out" />
                         <feColorMatrix
                           type="matrix"
-                          values="0 0 0 0 0.623529 0 0 0 0 0.160784 0 0 0 0 0.160784 0 0 0 1 0"
+                          values="0 0 0 0 0.101961 0 0 0 0 0.168627 0 0 0 0 0.298039 0 0 0 1 0"
                         />
                         <feBlend
                           mode="normal"

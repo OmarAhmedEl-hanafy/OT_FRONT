@@ -226,7 +226,7 @@
 // export default SignUP;
 
 import { Button } from "@material-tailwind/react";
-import signImg from "../../assets/images/sign.png";
+import signImg from "../../assets/images/OT/step_1.jpg";
 import Logo from "../../components/Logo/Logo";
 import { useState } from "react";
 import InputPhoneNumber from "../../components/Inputs/InputPhoneNumber";
@@ -342,7 +342,7 @@ function SignUP() {
         >
           {/* Left Image with slide-in-left animation */}
           <div className="hidden md:block col-span-7 md:col-span-3 slide-in-left">
-            <div className="img-sign h-[600px] w-[600px] rounded-[30px] overflow-hidden border border-main-color">
+            <div className="img-sign h-[680px] w-[600px] rounded-[100px] overflow-hidden border object-contain">
               <img className="" src={signImg} alt="SignUp" />
             </div>
           </div>
@@ -350,7 +350,7 @@ function SignUP() {
           {/* Right Section */}
           <div className="p-5 md:p-0 col-span-7 md:pr-5 md:col-span-4 w-[800px]">
             <div className="">
-              <Logo height={90} />
+              <Logo />
             </div>
 
             <h1 className="text-4xl font-bold pl-3 mt-1">Sign up</h1>

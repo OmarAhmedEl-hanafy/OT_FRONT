@@ -1,5 +1,5 @@
 import AchievementBox from "./AchievementBox";
-import imgAchiev from "../../assets/images/achiev.png";
+import imgAchiev from "../../assets/images/OT/Achieve.png";
 
 function Achievement() {
   const achievements = [
@@ -12,24 +12,24 @@ function Achievement() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect width="64" height="64" rx="8" fill="#E9F8F3" />
+          <rect width="64" height="64" rx="8" fill="#1A2B4C" />
           <path
             d="M11.375 26.5L32 15.5L52.625 26.5L32 37.5L11.375 26.5Z"
-            stroke="#1A906B"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M42.3125 51.25V32L32 26.5"
-            stroke="#1A906B"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M47.8125 29.061V38.4454C47.8113 38.7374 47.7147 39.0211 47.5375 39.2532C46.3859 40.8001 41.5047 46.4376 32 46.4376C22.4953 46.4376 17.6141 40.8001 16.4625 39.2532C16.2853 39.0211 16.1887 38.7374 16.1875 38.4454V29.061"
-            stroke="#1A906B"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -48,17 +48,17 @@ function Achievement() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect width="64" height="64" rx="8" fill="#FFFAF5" />
+          <rect width="64" height="64" rx="8" fill="#1A2B4C" />
           <path
             d="M14.125 20.3125H36.125C37.5837 20.3125 38.9826 20.892 40.0141 21.9234C41.0455 22.9549 41.625 24.3538 41.625 25.8125V42.3125C41.625 42.6772 41.4801 43.0269 41.2223 43.2848C40.9644 43.5426 40.6147 43.6875 40.25 43.6875H18.25C16.7913 43.6875 15.3924 43.108 14.3609 42.0766C13.3295 41.0451 12.75 39.6462 12.75 38.1875V21.6875C12.75 21.3228 12.8949 20.9731 13.1527 20.7152C13.4106 20.4574 13.7603 20.3125 14.125 20.3125V20.3125Z"
-            stroke="#FFC27A"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M41.625 29.25L51.25 23.75V40.25L41.625 34.75"
-            stroke="#FFC27A"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -77,24 +77,24 @@ function Achievement() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect width="64" height="64" rx="8" fill="#FFEEF0" />
+          <rect width="64" height="64" rx="8" fill="#1A2B4C" />
           <path
             d="M11.375 26.5L32 15.5L52.625 26.5L32 37.5L11.375 26.5Z"
-            stroke="#ED4459"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M42.3125 51.25V32L32 26.5"
-            stroke="#ED4459"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M47.8125 29.061V38.4454C47.8113 38.7374 47.7147 39.0211 47.5375 39.2532C46.3859 40.8001 41.5047 46.4376 32 46.4376C22.4953 46.4376 17.6141 40.8001 16.4625 39.2532C16.2853 39.0211 16.1887 38.7374 16.1875 38.4454V29.061"
-            stroke="#ED4459"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -113,45 +113,45 @@ function Achievement() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect width="64" height="64" rx="8" fill="#F0F7FF" />
+          <rect width="64" height="64" rx="8" fill="#1A2B4C" />
           <path
             d="M32 40.9375C35.797 40.9375 38.875 37.8595 38.875 34.0625C38.875 30.2655 35.797 27.1875 32 27.1875C28.203 27.1875 25.125 30.2655 25.125 34.0625C25.125 37.8595 28.203 40.9375 32 40.9375Z"
-            stroke="#0075FD"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M43.6875 29.9375C45.2889 29.9348 46.8688 30.3064 48.3012 31.0226C49.7336 31.7388 50.9788 32.7798 51.9375 34.0625"
-            stroke="#0075FD"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M12.0625 34.0625C13.0212 32.7798 14.2664 31.7388 15.6988 31.0226C17.1312 30.3064 18.7111 29.9348 20.3125 29.9375"
-            stroke="#0075FD"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M22.0996 47.125C23.0051 45.2706 24.4132 43.7078 26.1635 42.6147C27.9138 41.5215 29.936 40.9419 31.9996 40.9419C34.0633 40.9419 36.0854 41.5215 37.8357 42.6147C39.586 43.7078 40.9941 45.2706 41.8996 47.125"
-            stroke="#0075FD"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M20.3122 29.9375C19.2683 29.9386 18.2457 29.6425 17.3638 29.084C16.4819 28.5254 15.7772 27.7274 15.3319 26.7832C14.8867 25.839 14.7194 24.7876 14.8495 23.7519C14.9797 22.7161 15.4019 21.7388 16.0668 20.9341C16.7318 20.1294 17.612 19.5305 18.6047 19.2075C19.5973 18.8844 20.6614 18.8506 21.6726 19.1098C22.6838 19.3691 23.6003 19.9108 24.3151 20.6716C25.0299 21.4324 25.5134 22.3809 25.7091 23.4062"
-            stroke="#0075FD"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M38.291 23.4062C38.4867 22.3809 38.9702 21.4324 39.685 20.6716C40.3998 19.9108 41.3163 19.3691 42.3275 19.1098C43.3387 18.8506 44.4028 18.8844 45.3954 19.2075C46.3881 19.5305 47.2683 20.1294 47.9333 20.9341C48.5982 21.7388 49.0204 22.7161 49.1506 23.7519C49.2807 24.7876 49.1134 25.839 48.6682 26.7832C48.2229 27.7274 47.5182 28.5254 46.6363 29.084C45.7544 29.6425 44.7318 29.9386 43.6879 29.9375"
-            stroke="#0075FD"
+            stroke="#FFFFFF"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -166,26 +166,26 @@ function Achievement() {
   return (
     <section className="py-[50px]">
       <div className="container">
-        <div className="pl-5">
-          <h2 className="text-2xl font-bold">
-            Our <span className="text-main-color">Achievement</span>
+        <div className="pl-5 text-center">
+          <h2 className="text-4xl font-bold">
+            Our <span className="text-second-color">Achievement</span>
           </h2>
           <p className="mt-2">
             Various versions have evolved over the years, sometimes by accident,
           </p>
         </div>
 
-        <div className="grid md:grid-cols-7 place-content-between  items-center ">
+        <div className="grid md:grid-cols-7 place-content-between items-center ">
           <div className="md:col-span-5 grid md:grid-cols-2 justify-center gap-y-5 ">
             {achievements.map((achiev, ind) => (
-              <div key={ind} >
+              <div key={ind}>
                 <AchievementBox achievement={achiev} />
               </div>
             ))}
           </div>
 
           <div className="md:col-span-2 ml-8 md:ml-auto">
-            <img src={imgAchiev} alt="Achievement RS" />
+            <img src={imgAchiev} alt="Achievement OT" />
           </div>
         </div>
       </div>

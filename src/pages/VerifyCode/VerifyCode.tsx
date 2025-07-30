@@ -56,13 +56,13 @@ function VerifyCode() {
           {/* Resend Link */}
           <p className="text-sm text-gray-900">
             Didn’t receive a code?{" "}
-            <span className="text-red-500 cursor-pointer">Resend</span>
+            <span className="text-blue-500 cursor-pointer">Resend</span>
           </p>
 
           {/* Submit Button */}
           <Button
             type="submit"
-            className="w-full bg-red-900 hover:bg-red-900 mt-4"
+            className="w-full bg-blue-900 hover:bg-blue-900 mt-4"
           >
             Verify
           </Button>

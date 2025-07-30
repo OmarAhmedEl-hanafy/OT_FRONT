@@ -1,17 +1,16 @@
-
-import CountUp from 'react-countup';
-import numImg from '../../assets/images/numsImg.png';
+import CountUp from "react-countup";
+import numImg from "../../assets/images/numsImg.png";
 
 function Nums() {
   return (
     <section className="bg-main-color text-white px-5 pt-8">
       <div className="mx-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          <div className="">
+          <div className="flex flex-col items-center justify-center">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold capitalize">
               <div className=" flex items-center">
                 Thousands of
-                <span className="inline-block text-main-color/70 relative ml-2 mb-2">
+                <span className="inline-block text-main-color relative ml-2 mb-2">
                   <span className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] ">
                     {" "}
                     Courses
@@ -36,41 +35,53 @@ function Nums() {
           </div>
 
           <div className="relative grid md:grid-cols-2 gap-5 text-center">
-            <div className="text-5xl font-semibold flex flex-col">
+            <div className="text-5xl font-semibold flex flex-col items-center justify-center ">
               <span>
-                <span><CountUp end={20} duration={2} enableScrollSpy={true} /></span>K+
+                <span>
+                  <CountUp end={20} duration={2} enableScrollSpy={true} />
+                </span>
+                K+
               </span>
               <span className="text-xl font-[300]">Countries</span>
             </div>
 
             <div className="hidden md:block absolute top-0 left-[50%] translate-x-1/2 rounded-[2px] h-[45%] w-[3px] bg-gradient-line"></div>
 
-            <div className="text-5xl font-semibold flex flex-col">
+            <div className="text-5xl font-semibold flex flex-col items-center justify-center">
               <span>
-                <span><CountUp end={1000} duration={2} enableScrollSpy={true} /></span>+
+                <span>
+                  <CountUp end={1000} duration={2} enableScrollSpy={true} />
+                </span>
+                +
               </span>
               <span className="text-xl font-[300]">Clients</span>
             </div>
 
-            <div className="text-5xl font-semibold flex flex-col">
+            <div className="text-5xl font-semibold flex flex-col items-center justify-center">
               <span>
-                <span><CountUp end={600} duration={2} enableScrollSpy={true} /></span>+
+                <span>
+                  <CountUp end={600} duration={2} enableScrollSpy={true} />
+                </span>
+                +
               </span>
               <span className="text-xl font-[300]">Team</span>
             </div>
 
             <div className="hidden md:block absolute bottom-0 left-[50%] translate-x-1/2 rounded-[2px] h-[45%] w-[3px] bg-gradient-line"></div>
 
-            <div className="text-5xl font-semibold flex flex-col">
+            <div className="text-5xl font-semibold flex flex-col items-center justify-center">
               <span>
-                <span><CountUp end={4} duration={2} enableScrollSpy={true} /></span>+
+                <span>
+                  <CountUp end={4} duration={2} enableScrollSpy={true} />
+                </span>
+                +
               </span>
               <span className="text-xl font-[300]">Office</span>
             </div>
           </div>
 
-          <div className="">
-            <img src={numImg} alt="RS" />
+          <div className="h-[200px] md:h-[300px] lg:h-[350px] flex items-center justify-center">
+            <img src={numImg} alt="OT" />
           </div>
         </div>
       </div>

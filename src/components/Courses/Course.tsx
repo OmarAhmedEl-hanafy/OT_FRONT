@@ -3,7 +3,22 @@ import { Typography } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import TruncateText from "../TruncateText ";
 
-function Course({ course, inHome }: any) {
+interface CourseProps {
+  course: {
+    coursePhoto: string;
+    shortDesc: string;
+    courseNameEn: string;
+    fullDesc: string;
+    oldPrice: number;
+    price: number;
+    courseId: string | number;
+    // numStudent?: number; // Uncomment if needed
+    // date?: string; // Uncomment if needed
+  };
+  inHome: boolean;
+}
+
+function Course({ course, inHome }: CourseProps) {
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden ">
       <div className="img-course">

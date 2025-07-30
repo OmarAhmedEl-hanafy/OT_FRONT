@@ -13,7 +13,7 @@ function AssistantDetails({ assistant }: props) {
   return (
     <div className="grid md:grid-cols-2 items-center mt-5 gap-y-5">
       <div
-        style={{ boxShadow: "8px 8px 0px #9F2929" }}
+        style={{ boxShadow: "8px 8px 0px #1a2b4c" }}
         className="relative mx-auto "
       >
         <div className=" w-[220px] h-[350px]">
