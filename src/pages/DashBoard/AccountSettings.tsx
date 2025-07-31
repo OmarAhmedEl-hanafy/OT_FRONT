@@ -130,7 +130,7 @@ const AccountSettings: React.FC = () => {
             </div>
             <button
               onClick={handleSaveChanges}
-              className="bg-red-900 text-white px-4 py-2 rounded-lg mt-4"
+              className="bg-main-color text-white px-4 py-2 rounded-lg mt-4"
             >
               Save Changes
             </button>
@@ -144,13 +144,13 @@ const AccountSettings: React.FC = () => {
         <div className="space-y-4">
           <div className="relative">
             <InputPass
-              label="password"
-              name="password"
+              label="Current password"
+              name="Current password"
               placeholder="Current Password"
               value={currentPassword}
               handlechange={(e) => setCurrentPassword(e.target.value)}
             />
-            <i className="fas fa-eye absolute right-4 top-3 text-gray-400 cursor-pointer"></i>
+            {/* <i className="fas fa-eye absolute right-4 top-3 text-blue-900 cursor-pointer"></i> */}
           </div>
           <div className="relative">
             <InputPass
@@ -159,8 +159,12 @@ const AccountSettings: React.FC = () => {
               placeholder="new Password"
               value={newPassword}
               handlechange={(e) => setNewPassword(e.target.value)}
+              // Add some right padding to prevent text under the icon
             />
-            <i className="fas fa-eye absolute right-4 top-3 text-gray-400 cursor-pointer"></i>
+            {/* <i
+              className="fas fa-eye absolute right-3 top-[38px] text-blue-900 cursor-pointer hover:text-blue-700"
+              onClick={() => setShowPassword(!showPassword)} // Add toggle functionality
+            ></i> */}
           </div>
           <div className="relative">
             <InputPass
@@ -170,11 +174,11 @@ const AccountSettings: React.FC = () => {
               value={confirmPassword}
               handlechange={(e) => setConfirmPassword(e.target.value)}
             />
-            <i className="fas fa-eye absolute right-4 top-3 text-gray-400 cursor-pointer"></i>
+            {/* <i className="fas fa-eye absolute right-4 top-3 text-blue-900 cursor-pointer"></i> */}
           </div>
           <button
             onClick={handleChangePassword}
-            className="bg-red-900 text-white px-4 py-2 rounded-lg mt-4"
+            className="bg-main-color text-white px-4 py-2 rounded-lg mt-4"
           >
             Change Password
           </button>

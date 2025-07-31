@@ -15,28 +15,52 @@ interface CourseProps {
 // Sample course data
 const courses = [
   {
-    title: "31. Learn More About Web Design",
+    title: "1. Learn More About Web Design",
     lesson: "Learn Ethical Hacking From Scratch",
     progress: 0,
     imgSrc: course1,
   },
   {
-    title: "165. Font Properties Challenge 3 - Change",
+    title: "2. Font Properties Challenge",
     lesson: "SQL for NEWBS: Weekender Crash Course",
     progress: 2,
     imgSrc: course2,
   },
   {
-    title: "7. Adding Content to Our Website",
+    title: "3. Adding Content to Our Website",
     lesson: "Complete Adobe Lightroom Megacourse",
     progress: 0,
     imgSrc: course3,
   },
   {
-    title: "651. CSS Font Property Challenge Solution",
+    title: "4. CSS Font Property Solution",
     lesson: "Machine Learning A-Z™: Hands-On Python",
     progress: 23,
     imgSrc: course4,
+  },
+  {
+    title: "1. Learn More About Web Design",
+    lesson: "Learn Ethical Hacking From Scratch",
+    progress: 0,
+    imgSrc: course4,
+  },
+  {
+    title: "2. Font Properties Challenge",
+    lesson: "SQL for NEWBS: Weekender Crash Course",
+    progress: 2,
+    imgSrc: course3,
+  },
+  {
+    title: "3. Adding Content to Our Website",
+    lesson: "Complete Adobe Lightroom Megacourse",
+    progress: 0,
+    imgSrc: course2,
+  },
+  {
+    title: "4. CSS Font Property Solution",
+    lesson: "Machine Learning A-Z™: Hands-On Python",
+    progress: 23,
+    imgSrc: course1,
   },
 ];
 
@@ -48,31 +72,45 @@ const CourseCard: React.FC<CourseProps> = ({
   imgSrc,
 }) => {
   return (
-    <div className="course-card bg-white shadow-lg rounded-lg p-4 w-full sm:w-[330px]">
-      <img
-        src={imgSrc}
-        alt={title}
-        className="w-full h-40 object-cover rounded-md mb-4"
-      />
-      <div className="text-xs text-gray-500 mb-1">{lesson}</div>
-      <div className="text-sm font-semibold text-gray-900 mb-4">{title}</div>
-      <div className="border-t-2 border-gray-300 p-2 mb-2"></div>
+    <div className="course-card bg-white shadow-lg rounded-lg p-4 w-full sm:w-[300px] flex flex-col">
+      {/* Image section with fixed aspect ratio */}
+      <div className="relative w-full aspect-video mb-4">
+        <img
+          src={imgSrc}
+          alt={title}
+          className="w-full h-full object-cover rounded-md"
+        />
+      </div>
 
-      <div className="flex justify-between items-center">
-        <button
-          className="text-red-900 font-semibold px-4 py-2 rounded hover:!bg-red-900 hover:!text-white transition-all"
-          style={{
-            backgroundColor: "#1a2b4c",
-            width: progress > 0 ? "auto" : "100%",
-          }}
-        >
-          Watch Lecture
-        </button>
-        {progress > 0 && (
-          <p className="text-green-600 text-sm pl-3 font-semibold">
-            {progress}% Completed
-          </p>
-        )}
+      {/* Content section */}
+      <div className="flex-grow flex flex-col">
+        <div className="text-sm font-semibold text-gray-900 mb-4 line-clamp-2">
+          {title}
+        </div>
+        <div className="text-xs text-gray-500 mb-1">{lesson}</div>
+
+        {/* Divider */}
+        {/* <div className="border-t-2 border-gray-300 my-2"></div> */}
+
+        {/* Button section */}
+        <div className="mt-auto border-t-2 border-gray-300 pt-3">
+          <div className="flex justify-between items-center">
+            <button
+              className="text-white font-semibold px-4 py-2 rounded hover:bg-blue-900 hover:text-blue-300 transition-all"
+              style={{
+                backgroundColor: "#1a2b4c",
+                width: progress > 0 ? "auto" : "100%",
+              }}
+            >
+              Watch Lecture
+            </button>
+            {progress > 0 && (
+              <p className="text-green-600 text-sm pl-3 font-bold">
+                {progress}% Completed
+              </p>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -124,7 +162,7 @@ const UserCourses: React.FC = () => {
             </select>
           </div>
 
-          <div>
+          {/* <div>
             <label className="text-gray-500 mr-2">Teacher:</label>
             <select
               title="Teacher"
@@ -134,7 +172,7 @@ const UserCourses: React.FC = () => {
               <option value="Teacher 1">Teacher 1</option>
               <option value="Teacher 2">Teacher 2</option>
             </select>
-          </div>
+          </div> */}
         </div>
       </div>
 

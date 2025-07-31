@@ -1,6 +1,6 @@
-.profile-card {
+/* .profile-card {
   background-color: #fdecef;
-}
+} */
 
 .Dashboard-container {
   margin-top: 120px;
@@ -9,7 +9,7 @@
 }
 
 .profile-info h2 {
-  color: #333;
+  color: #ffffff !important;
 }
 
 .tabs button {
@@ -18,7 +18,7 @@
 }
 
 .tabs button:hover {
-  color: #000;
+  color: #1a2b4c;
 }
 
 .stat-box {

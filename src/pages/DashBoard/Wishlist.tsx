@@ -68,7 +68,7 @@ const Wishlist: React.FC = () => {
                     />
                     <div>
                       <h3 className="text-md font-semibold">{item.title}</h3>
-                      <div className="flex items-center text-sm text-yellow-500 my-1">
+                      <div className="flex items-center text-sm text-orange-500 my-1">
                         <span className="mr-1">{item.rating}</span>
                         <i className="fa-solid fa-star"></i>
                         <span className="text-gray-500 ml-2">
@@ -82,7 +82,7 @@ const Wishlist: React.FC = () => {
                   </div>
                 </td>
                 <td className="py-4 px-4">
-                  <div className="flex items-center text-lg font-bold text-red-900">
+                  <div className="flex items-center text-lg font-bold text-main-color">
                     ${item.price.toFixed(2)}
                     {item.originalPrice && (
                       <span className="text-gray-400 text-sm line-through ml-2">
@@ -93,13 +93,13 @@ const Wishlist: React.FC = () => {
                 </td>
                 <td className="py-4 px-4">
                   <div className="flex gap-2">
-                    <button className="bg-gray-100 text-gray-800 py-2 px-6 font-bold rounded hover:bg-gray-300 transition-all">
+                    <button className="bg-gray-300 text-main-color py-2 px-6 font-bold rounded hover:bg-gray-400 transition-all">
                       Buy Now
                     </button>
-                    <button className="bg-red-800 text-white py-2 px-8 rounded font-bold hover:bg-red-900 transition-all">
+                    <button className="bg-main-color text-white py-2 px-8 rounded font-bold hover: transition-all">
                       Add To Cart
                     </button>
-                    <button className="w-[40px] h-[40px] bg-red-100 text-red-500 rounded hover:text-red-900 transition-all">
+                    <button className="w-[40px] h-[40px] bg-blue-200 text-white rounded hover:text-main-color transition-all">
                       <i className="fa-solid fa-heart w-[25px]"></i>
                     </button>
                   </div>

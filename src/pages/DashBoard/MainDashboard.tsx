@@ -35,7 +35,7 @@ const MainDashboard: React.FC = () => {
   return (
     <div className="Dashboard-container mx-auto px-4 py-8">
       {/* Profile Card */}
-      <div className="profile-card p-6 rounded-lg shadow-md flex justify-between items-center">
+      <div className="profile-card bg-main-color p-6 rounded-lg shadow-md flex justify-between items-center">
         <div className="profile-info flex items-center">
           <img
             src={ProfilePhoto} // Replace with user's profile image
@@ -43,17 +43,20 @@ const MainDashboard: React.FC = () => {
             className="rounded-full w-20 h-20 mr-6"
           />
           <div>
-            <h2 className="text-xl font-bold">Mohamed Saeed</h2>
-            <p className="text-gray-600">
-              Web Designer & Best-Selling Instructor
-            </p>
+            <h2
+              className="text-xl font-bold"
+              style={{ color: "#ffffff !important" }}
+            >
+              Omar Tawfik
+            </h2>
+            <p className="text-white">Web Developer & Designer</p>
           </div>
         </div>
-        <div>
-          <button className="text-red-900 bg-[#ffffff] font-semibold px-4 py-2 rounded-lg hover:!bg-red-900 hover:!text-white">
+        {/* <div>
+          <button className=" text-main-color bg-[#ffffff] font-semibold px-4 py-2 rounded-lg hover:!bg-blue-500 hover:!text-white">
             Become Instructor <i className="fas fa-arrow-right ml-2"></i>
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Navigation Tabs */}
@@ -63,8 +66,8 @@ const MainDashboard: React.FC = () => {
           <button
             className={`pb-2 ${
               activeTab === "Dashboard"
-                ? "border-b-2 border-blue-500 text-black font-semibold"
-                : "hover:text-black"
+                ? "border-b-2 border-blue-500 text-blue-600 font-semibold"
+                : "hover:text-main-color"
             } whitespace-nowrap`}
             onClick={() => setActiveTab("Dashboard")}
           >
@@ -73,28 +76,28 @@ const MainDashboard: React.FC = () => {
           <button
             className={`pb-2 ${
               activeTab === "Courses"
-                ? "border-b-2 border-blue-500 text-black font-semibold"
-                : "hover:text-black"
+                ? "border-b-2 border-blue-500 text-blue-600 font-semibold"
+                : "hover:text-main-color"
             } whitespace-nowrap`}
             onClick={() => setActiveTab("Courses")}
           >
             Courses
           </button>
-          <button
+          {/* <button
             className={`pb-2 ${
               activeTab === "Teachers"
-                ? "border-b-2 border-blue-500 text-black font-semibold"
-                : "hover:text-black"
+                ? "border-b-2 border-blue-500 text-blue-600 font-semibold"
+                : "hover:text-main-color"
             } whitespace-nowrap`}
             onClick={() => setActiveTab("Teachers")}
           >
             Teachers
-          </button>
+          </button> */}
           <button
             className={`pb-2 ${
               activeTab === "Wishlist"
-                ? "border-b-2 border-blue-500 text-black font-semibold"
-                : "hover:text-black"
+                ? "border-b-2 border-blue-500 text-blue-600 font-semibold"
+                : "hover:text-main-color"
             } whitespace-nowrap`}
             onClick={() => setActiveTab("Wishlist")}
           >
@@ -103,8 +106,8 @@ const MainDashboard: React.FC = () => {
           <button
             className={`pb-2 ${
               activeTab === "Purchase History"
-                ? "border-b-2 border-blue-500 text-black font-semibold"
-                : "hover:text-black"
+                ? "border-b-2 border-blue-500 text-blue-600 font-semibold"
+                : "hover:text-main-color"
             } whitespace-nowrap`}
             onClick={() => setActiveTab("Purchase History")}
           >
@@ -113,8 +116,8 @@ const MainDashboard: React.FC = () => {
           <button
             className={`pb-2 ${
               activeTab === "Settings"
-                ? "border-b-2 border-blue-500 text-black font-semibold"
-                : "hover:text-black"
+                ? "border-b-2 border-blue-500 text-blue-600 font-semibold"
+                : "hover:text-main-color"
             } whitespace-nowrap`}
             onClick={() => setActiveTab("Settings")}
           >

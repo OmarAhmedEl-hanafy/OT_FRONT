@@ -36,7 +36,7 @@ const purchases: Purchase[] = [
     totalPrice: "75.00 USD",
     paymentMethod: "Credit Card",
     first4digits: "4142 **** **** ****",
-    expDate: "04/24",
+    expDate: "04/27",
     courses: [
       {
         imgSrc: course1,
@@ -142,7 +142,7 @@ const PurchaseHistory: React.FC = () => {
             {/* Right section: Dropdown arrow */}
             <div>
               {openIndex === index ? (
-                <FaChevronUp className="text-red-900" />
+                <FaChevronUp className="text-main-color" />
               ) : (
                 <FaChevronDown className="text-gray-500" />
               )}
@@ -168,7 +168,7 @@ const PurchaseHistory: React.FC = () => {
                         />
                         <div className="flex-1">
                           <h4 className="font-semibold">{course.title}</h4>
-                          <div className="flex items-center text-sm text-yellow-500 my-1">
+                          <div className="flex items-center text-sm text-orange-500 my-1">
                             <span>{course.rating}</span>
                             <BsStarFill className="ml-1" />
                             <span className="text-gray-500 ml-2">
@@ -179,7 +179,7 @@ const PurchaseHistory: React.FC = () => {
                             Course by: {course.instructor}
                           </p>
                         </div>
-                        <p className="text-lg font-bold text-red-900">
+                        <p className="text-lg font-bold text-second-color">
                           {course.price}
                         </p>
                       </div>
@@ -221,7 +221,7 @@ const PurchaseHistory: React.FC = () => {
                       </div>
                     </div>
                     <p className="flex w-[90%] text-[15px] justify-between">
-                      <p>Mohamed Saed </p>
+                      <p>Omar Tawfik </p>
                       <p> {purchase.first4digits} </p>
                       <p> {purchase.expDate} </p>
                     </p>
