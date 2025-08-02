@@ -238,7 +238,7 @@ import * as Yup from "yup";
 import { toast } from "react-toastify";
 import InputComponent from "../../components/Inputs/InputComponent";
 import InputPass from "../../components/Inputs/InputPass";
-import SocialSignupSection from "../../components/Inputs/SocialSignupSection";
+// import SocialSignupSection from "../../components/Inputs/SocialSignupSection";
 
 // Define form values type
 interface FormValues {
@@ -438,9 +438,9 @@ function SignUP() {
                 </div>
               </form>
 
-              <div className="login-container social-signup bounce-animation">
+              {/* <div className="login-container social-signup bounce-animation">
                 <SocialSignupSection />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
