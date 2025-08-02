@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: rgb(26, 43, 76); /*#A02829*/
+  --second-color: rgb(74, 144, 226);
+  --bg-main: #f5fcff;
+  --text-color: #161439;
+}
+
+@layer {
+  .container {
+    margin: auto;
+  }
+
+  .bg-gradient {
+    background: linear-gradient(180deg, #1a2b4cbd 0%, #d4dce8 100%);
+  }
+
+  .bg-gradient-line {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  .font-poppins {
+    font-family: "Poppins";
+  }
+
+  .font-raleway {
+    font-family: "Raleway";
+  }
+
+  .my-box {
+    border: 1px solid #c9e4e9 !important;
+    box-shadow: 8px 8px 0px #c9e4e9;
+    border-radius: 20px;
+  }
+
+  .btn-more {
+    background: #1a2b4cd2;
+    box-shadow: 4px 6px 0px #1a2b4c;
+    border-radius: 50px;
+    color: #ffffff !important;
+    font-weight: bold;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "inter";
+  overflow-x: hidden;
+  background: #ffffff;
+  position: relative;
+  color: var(--text-color);
+}
+
+p {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.active {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.btn {
+  min-width: 130px;
+  height: 45px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.6s;
+  -webkit-transition: color 0.6s;
+  -moz-transition: color 0.6s;
+  -ms-transition: color 0.6s;
+  -o-transition: color 0.6s;
+}
+
+.btn-main::after,
+.btn-white::after {
+  position: absolute;
+  content: attr(data-content);
+  width: 100%;
+
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-main::after {
+  background-color: #ffffff;
+  color: var(--main-color);
+}
+
+.btn-white::after {
+  background-color: var(--main-color);
+  color: #ffffff;
+}
+
+.btn-main:hover::after,
+.btn-white:hover::after {
+  width: 100%;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.badge {
+  position: relative;
+  width: 400px;
+  border-radius: 50%;
+  transform: rotate(-50deg);
+}
+
+.rounded-line {
+  position: relative;
+}
+
+.rounded-line::after {
+  position: absolute;
+  content: "";
+  bottom: -50px;
+  left: 50%;
+  width: 80%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 4px solid #0b7077;
+}
+
+.slick-slide {
+  padding: 10px 5px 20px 5px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  border: 2px solid red;
+}
+
+.slick-dots li.slick-active button::before {
+  opacity: 1;
+  color: #a02828 !important;
+}
+
+.slick-dots li button:before:hover {
+  color: #a02828 !important;
+  border: 2px solid red;
+}

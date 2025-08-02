@@ -1,0 +1,21 @@
+import img1 from '../../assets/images/slider-middle/img-1.png';
+
+function SliderInMiddle() {
+  return (
+    <section className='my-[50px]'>
+        <div className="container">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="">
+                    <div className="h-[500px] pr-[100px]">
+                        <img src={img1} alt="Spiritual side" />
+
+                        <div className="circle-nums"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  )
+}
+
+export default SliderInMiddle
