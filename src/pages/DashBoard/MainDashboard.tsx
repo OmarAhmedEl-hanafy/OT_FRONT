@@ -5,7 +5,7 @@ import Dashboard from "./DashBoard";
 import Teachers from "./Teachers";
 import AccountSettings from "./AccountSettings";
 import PurchaseHistory from "./PurchaseHistory";
-// import Wishlist from "./Wishlist";
+import Wishlist from "./Wishlist";
 import UserCourses from "./UserCourses";
 
 const MainDashboard: React.FC = () => {
@@ -21,8 +21,8 @@ const MainDashboard: React.FC = () => {
         return <UserCourses />;
       case "Teachers":
         return <Teachers />;
-      // case "Wishlist":
-      //   return <Wishlist />;
+      case "Wishlist":
+        return <Wishlist />;
       case "Purchase History":
         return <PurchaseHistory />;
       case "Settings":
