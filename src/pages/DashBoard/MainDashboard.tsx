@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./MainDashBoard.css";
-// import ProfilePhoto from "../../assets/images/Dashboard/ProfilePhoto.svg";
+import ProfilePhoto from "../../assets/images/Dashboard/ProfilePhoto.svg";
 import Dashboard from "./DashBoard";
 import Teachers from "./Teachers";
 import AccountSettings from "./AccountSettings";
@@ -37,11 +37,11 @@ const MainDashboard: React.FC = () => {
       {/* Profile Card */}
       <div className="profile-card bg-main-color p-6 rounded-lg shadow-md flex justify-between items-center">
         <div className="profile-info flex items-center">
-          {/* <img
+          <img
             src={ProfilePhoto} // Replace with user's profile image
             alt="Profile"
             className="rounded-full w-20 h-20 mr-6"
-          /> */}
+          />
           <div>
             <h2
               className="text-xl font-bold"

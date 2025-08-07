@@ -12,7 +12,6 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "typeRoots": ["./node_modules/@types", "./src/@types"],
-    // "typeRoots": ["./node_modules/@types", "./src/types"],
 
     /* Bundler mode */
     // "moduleResolution": "bundler",
