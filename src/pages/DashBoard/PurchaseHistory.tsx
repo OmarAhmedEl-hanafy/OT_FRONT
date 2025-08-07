@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import course1 from "../../assets/images/Dashboard/Course_Images1.png";
 import course2 from "../../assets/images/Dashboard/Course_Images2.svg";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import { FaBook, FaDollarSign, FaCreditCard } from "react-icons/fa";
+import {
+  FaChevronDown,
+  FaChevronUp,
+  FaBook,
+  FaDollarSign,
+  FaCreditCard,
+} from "react-icons/fa";
 import { BsStarFill } from "react-icons/bs";
+
 import "./PurchaseHistory.css";
 
 // Course data for purchase history

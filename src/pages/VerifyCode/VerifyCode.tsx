@@ -63,6 +63,11 @@ function VerifyCode() {
           <Button
             type="submit"
             className="w-full bg-blue-900 hover:bg-blue-900 mt-4"
+            placeholder=""
+            onResize={() => {}}
+            onResizeCapture={() => {}}
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             Verify
           </Button>

@@ -40,7 +40,8 @@ function InputComponent({
         type={type}
         required
         {...settingInput}
-        error={!!errors} // Check if there's any error (boolean)
+        error={!!errors}
+        crossOrigin={"" as "" | "anonymous" | "use-credentials" | undefined} // Ensure crossOrigin is set correctly
       />
       {/* Conditionally render the icon if it exists */}
       {icon && (

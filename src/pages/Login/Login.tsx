@@ -183,18 +183,12 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import InputComponent from "../../components/Inputs/InputComponent";
 import InputPass from "../../components/Inputs/InputPass";
-import SocialLoginSection from "../../components/Inputs/SocialLoginSection";
+// import SocialLoginSection from "../../components/Inputs/SocialLoginSection";
 
 function Login() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   //   const [errorLogin,setErrorLogin] = useState('');
-
-  const settingInput = {
-    onPointerEnterCapture: "()=>{}",
-    onPointerLeaveCapture: "()=>{}",
-    crossOrigin: "",
-  };
 
   function sendDataToApi(values: any) {
     axios
@@ -279,7 +273,6 @@ function Login() {
                     type="submit"
                     className="!bg-main-color flex justify-center"
                     loading={loading}
-                    {...settingInput}
                     placeholder={""}
                     fullWidth
                   >
@@ -289,9 +282,9 @@ function Login() {
               </form>
 
               {/* Social Signup Section */}
-              <div className="login-container social-signup bounce-animation">
+              {/* <div className="login-container social-signup bounce-animation">
                 <SocialLoginSection />
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="hidden md:block col-span-7 md:col-span-4">

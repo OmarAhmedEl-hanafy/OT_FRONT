@@ -118,16 +118,17 @@ function InputPass({
         icon={
           <button
             type="button"
-            onClick={() => {
-              setViewPass(!viewPass);
-            }}
+            onClick={() => setViewPass(!viewPass)}
+            aria-label={viewPass ? "Hide password" : "Show password"}
           >
             <i className={`fa-solid fa-${viewPass ? "eye" : "eye-slash"}`} />
           </button>
         }
         required
-        {...settingInput}
         error={!!error}
+        crossOrigin={undefined} // أو "" أو "anonymous" أو "use-credentials"
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
       />
 
       {error && (

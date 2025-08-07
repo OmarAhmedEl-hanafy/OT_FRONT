@@ -3,7 +3,7 @@ import { Button } from "@material-tailwind/react";
 import Logo from "../../assets/images/logo.svg";
 import Passphoto from "../../assets/images/Passphoto.svg";
 import { Link } from "react-router-dom";
-import SocialForgetPassSection from "../../components/Inputs/SocialForgetPassSection";
+// import SocialForgetPassSection from "../../components/Inputs/SocialForgetPassSection";
 import axios, { AxiosError } from "axios"; // For making the API call
 import InputComponent from "../../components/Inputs/InputComponent";
 
@@ -20,7 +20,7 @@ function ForgetPassword() {
     try {
       // Call the backend API to send the verification code
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/send-verification`,
+        `${import.meta.env.VITE_API_URL}/send-verification`,
         { email }
       );
 
@@ -94,15 +94,20 @@ function ForgetPassword() {
             type="submit"
             className="w-full bg-red-900 hover:bg-red-900"
             disabled={isSubmitting}
+            placeholder={undefined}
+            onResize={undefined}
+            onResizeCapture={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
           >
             {isSubmitting ? "Sending..." : "Submit"}
           </Button>
         </form>
 
         {/* Social Login Section */}
-        <div className="mt-6">
+        {/* <div className="mt-6">
           <SocialForgetPassSection />
-        </div>
+        </div> */}
       </div>
 
       {/* Right Section */}

@@ -178,11 +178,9 @@ const NewPaymentCards = () => {
 
           <div className="form-group">
             <Checkbox
-              crossOrigin={false}
-              onPointerEnterCapture={false}
-              onPointerLeaveCapture={false}
+              // crossOrigin removed to fix type error
               label="Remember this card, save it on my card list"
-              className="text-red-500"
+              className="text-blue-500"
             />
           </div>
         </div>
