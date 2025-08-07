@@ -13,10 +13,10 @@ import SignUP from "./pages/SignUp/SignUP";
 import { ToastContainer } from "react-toastify";
 import NotFound from "./components/NotFound/NotFound";
 import Login from "./pages/Login/Login";
-// import ForgotPassword from "./pages/ForgetPassword/ForgetPassword"; // Import the SetPassword component
-// import SetPassword from "./pages/SetPassword/SetPassword"; // Import the SetPassword component
-// import VerifyCode from "./pages/VerifyCode/VerifyCode"; // Import the SetPassword component
-// import PaymentMethod from "./pages/AddPaymentMethod/AddPaymentMethod";
+import ForgotPassword from "./pages/ForgetPassword/ForgetPassword"; // Import the SetPassword component
+import SetPassword from "./pages/SetPassword/SetPassword"; // Import the SetPassword component
+import VerifyCode from "./pages/VerifyCode/VerifyCode"; // Import the SetPassword component
+import PaymentMethod from "./pages/AddPaymentMethod/AddPaymentMethod";
 import GiftCourse from "./pages/GiftCourse/GiftCourse";
 import WatchCourse from "./pages/Courses/WatchCourse";
 import MainDashboard from "./pages/DashBoard/MainDashboard";
@@ -83,11 +83,11 @@ function App() {
           <Route path="register" element={<SignUP />} />
         </Route>
 
-        {/* <Route path="ForgotPassword" element={<ForgotPassword />} />
+        <Route path="ForgotPassword" element={<ForgotPassword />} />
         <Route path="SetPassword" element={<SetPassword />} />
 
         <Route path="PaymentMethod" element={<PaymentMethod />} />
-        <Route path="VerifyCode" element={<VerifyCode />} /> */}
+        <Route path="VerifyCode" element={<VerifyCode />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <ToastContainer style={{ minWidth: "max-content" }} theme="colored" />
