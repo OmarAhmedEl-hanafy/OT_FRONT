@@ -229,7 +229,7 @@ import { Button } from "@material-tailwind/react";
 import signImg from "../../assets/images/OT/step_1.jpg";
 import Logo from "../../components/Logo/Logo";
 import { useState } from "react";
-import InputPhoneNumber from "../../components/Inputs/InputPhoneNumber";
+// import InputPhoneNumber from "../../components/Inputs/InputPhoneNumber";
 import CheckboxWithLink from "../../components/Inputs/CheckboxWithLink";
 import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
@@ -252,7 +252,7 @@ interface FormValues {
 }
 
 function SignUP() {
-  const [codCountry, setCodCountry] = useState("+20");
+  // const [codCountry, setCodCountry] = useState("+20");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -263,10 +263,10 @@ function SignUP() {
   };
 
   // Set country code and clear the phone input
-  const getCodCountry = (code: string) => {
-    register.setFieldValue("phone", ""); // Clear phone number when country changes
-    setCodCountry(code);
-  };
+  // const getCodCountry = (code: string) => {
+  //   register.setFieldValue("phone", ""); // Clear phone number when country changes
+  //   setCodCountry(code);
+  // };
 
   // Send user data to the API
   // Define an interface for the error response structure
@@ -326,7 +326,7 @@ function SignUP() {
       // Concatenate first and last name into a full name
       values.name = `${values.fname} ${values.lname}`;
       // Prepend country code to phone number
-      values.phone = codCountry + values.phone;
+      // values.phone = codCountry + values.phone;
       setLoading(true);
       sendDataToApi(values); // Send data to API
       register.resetForm();
@@ -392,10 +392,10 @@ function SignUP() {
                     errors={register.errors.email}
                   />
 
-                  <InputPhoneNumber
+                  {/* <InputPhoneNumber
                     handlechange={register}
                     getCodCountry={getCodCountry}
-                  />
+                  /> */}
                 </div>
 
                 <div className="grid md:grid-cols-1 mt-2">
