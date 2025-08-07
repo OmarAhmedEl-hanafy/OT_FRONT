@@ -1,0 +1,1 @@
+import{L as t}from"./index-BkqIa_LS.js";function a({text:e}){return t.jsx("div",{className:"bg-[#1a2b4c] text-white px-4 py-2 rounded-2xl max-w-max",children:t.jsx("h5",{className:"capitalize text-[16px] font-semibold",style:{color:"white !important"},children:e})})}export{a as H};

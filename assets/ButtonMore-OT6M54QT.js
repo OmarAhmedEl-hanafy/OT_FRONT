@@ -1,0 +1,1 @@
+import{L as a,Y as n}from"./index-BkqIa_LS.js";function s({obj:t}){return a.jsxs(n,{to:t.link,className:"btn btn-main btn-more w-[250px]","data-content":t.text,children:[t.text,a.jsx("i",{className:"fas fa-arrow-right ml-3 text-2xl animate-pulse"})]})}export{s as B};
