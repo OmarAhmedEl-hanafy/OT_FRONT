@@ -1,5 +1,5 @@
 import React from "react";
-import course1 from "../../assets/images/DashBoard/Course_Images.png";
+import course1 from "../../assets/images/DashBoard/Course_Images2.svg";
 import course2 from "../../assets/images/DashBoard/Course_Images1.png";
 import course3 from "../../assets/images/DashBoard/Course_Images3.svg";
 
