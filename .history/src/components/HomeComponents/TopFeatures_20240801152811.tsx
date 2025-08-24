@@ -65,7 +65,7 @@ function TopFeatures() {
         </svg>
       ),
       title: "Top Eagle Training",
-      desc: "Our experienced coaches provide personalized one-on-one coaching to help you achieve your goals",
+      desc: "Comprehensive ACT training to help students master English, Math, Reading, and Science for top scores.",
       bg: "#ffffff",
       border: "#c9e4e9",
       boxShadow: "#1a2b4c",
@@ -94,8 +94,8 @@ function TopFeatures() {
           />
         </svg>
       ),
-      title: "Top Eagle Training",
-      desc: "Our experienced coaches provide personalized one-on-one coaching to help you achieve your goals",
+      title: "EST Courses",
+      desc: "Tailored EST lessons that prepare students for success in Egypt’s standardized university admission exams.",
       bg: "#ffffff",
       border: "#C8C1ED",
       boxShadow: "#1a2b4c",
@@ -134,7 +134,7 @@ function TopFeatures() {
         </svg>
       ),
       title: "Top Eagle Training",
-      desc: "Our experienced coaches provide personalized one-on-one coaching to help you achieve your goals",
+      desc: "Comprehensive ACT training to help students master English, Math, Reading, and Science for top scores.",
       bg: "#ffffff",
       border: "#EBE0C4",
       boxShadow: "#1a2b4c",

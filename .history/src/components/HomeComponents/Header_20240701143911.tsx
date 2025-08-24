@@ -8,7 +8,7 @@ function Header() {
   let sliderRef1: any = useRef(null);
 
   var settings = {
-    arrows:false,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,

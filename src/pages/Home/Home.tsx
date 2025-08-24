@@ -22,9 +22,9 @@ const Nums = lazy(() => import("../../components/HomeComponents/Nums"));
 // const AssistantCoach = lazy(
 //   () => import("../../components/HomeComponents/AssistantCoach")
 // );
-const StudentFeedback = lazy(
-  () => import("../../components/HomeComponents/StudentFeedback")
-);
+// const StudentFeedback = lazy(
+//   () => import("../../components/HomeComponents/StudentFeedback")
+// );
 // const Blogs = lazy(() => import("../../components/HomeComponents/Blogs"));
 const Achievement = lazy(
   () => import("../../components/HomeComponents/Achievement")
@@ -58,12 +58,12 @@ function Home() {
         <Suspense fallback={""}>
           <Nums />
         </Suspense>
-        {/*<Suspense fallback={""}>
+        {/* <Suspense fallback={""}>
           <AssistantCoach />
-        </Suspense>*/}
-        <Suspense fallback={""}>
+        </Suspense> */}
+        {/* <Suspense fallback={""}>
           <StudentFeedback />
-        </Suspense>
+        </Suspense> */}
         <Suspense fallback={""}>
           <Achievement />
           {/*</Suspense>

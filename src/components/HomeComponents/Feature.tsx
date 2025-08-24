@@ -10,7 +10,7 @@ type props = {
     border: any;
     boxShadow: any;
   };
-  index:number
+  index: number;
 };
 
 const divVariantsOdd = {
@@ -25,25 +25,24 @@ const divVariantsOdd = {
 };
 
 const divVariantsEven = {
-    hidden: {
-      opacity: 0,
-      x: "50%",
-    },
-    visible: {
-      opacity: 1,
-      x: "0%",
-    },
-  };
+  hidden: {
+    opacity: 0,
+    x: "50%",
+  },
+  visible: {
+    opacity: 1,
+    x: "0%",
+  },
+};
 
-function Feature({ feature,index }: props) {
-
-    const divVariants = (index%2)?divVariantsOdd:divVariantsEven;
+function Feature({ feature, index }: props) {
+  const divVariants = index % 2 ? divVariantsOdd : divVariantsEven;
 
   return (
     <motion.div
       variants={divVariants}
       initial="hidden"
-      whileInView= "visible"
+      whileInView="visible"
       transition={{ ease: "easeOut", duration: 1, delay: 0.3 }}
       className={`p-5 relative rounded-[20px]`}
       style={{
@@ -56,10 +55,7 @@ function Feature({ feature,index }: props) {
         <div className="icon">{feature.icon}</div>
         <div className="font-bold text-xl">{feature.title}</div>
       </div>
-      <p className="mt-2 p-2 capitalize opacity-80">
-        Our experienced coaches provide personalized one-on-one coaching to help
-        you achieve your goals
-      </p>
+      <p className="mt-2 p-2 capitalize opacity-80">{feature.desc}</p>
 
       <div className="absolute right-0 top-0 me-3 mt-2">
         <svg

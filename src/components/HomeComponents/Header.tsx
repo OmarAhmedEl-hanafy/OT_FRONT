@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import bg from "../../assets/images/bgHeader.png";
+// import bg from "../../assets/images/bgHeader.png";
 import Carousel from "./SliderHeader";
 
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
     <section className="relative mt-[100px] h-screen">
       <Carousel />
       <div className="absolute top-0 right-0 w-full h-[85%] -z-10">
-        <img alt="" className="" src={bg} />
+        {/* <img alt="" className="" src={bg} /> */}
       </div>
     </section>
   );

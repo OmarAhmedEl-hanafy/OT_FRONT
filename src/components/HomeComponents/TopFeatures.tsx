@@ -64,8 +64,8 @@ function TopFeatures() {
           </defs>
         </svg>
       ),
-      title: "Top Eagle Training",
-      desc: "Our experienced coaches provide personalized one-on-one coaching to help you achieve your goals",
+      title: "ACT Preparation",
+      desc: "Comprehensive ACT training to help students master English, Math, Reading, and Science for top scores.",
       bg: "#ffffff",
       border: "#c9e4e9",
       boxShadow: "#1a2b4c",
@@ -94,8 +94,8 @@ function TopFeatures() {
           />
         </svg>
       ),
-      title: "Top Eagle Training",
-      desc: "Our experienced coaches provide personalized one-on-one coaching to help you achieve your goals",
+      title: "EST Courses",
+      desc: "Tailored EST lessons that prepare students for success in Egypt’s standardized university admission exams.",
       bg: "#ffffff",
       border: "#C8C1ED",
       boxShadow: "#1a2b4c",
@@ -133,27 +133,27 @@ function TopFeatures() {
           />
         </svg>
       ),
-      title: "Top Eagle Training",
-      desc: "Our experienced coaches provide personalized one-on-one coaching to help you achieve your goals",
+      title: "SAT Training",
+      desc: "Expert SAT coaching focusing on critical reading, writing, and math to maximize college opportunities.",
       bg: "#ffffff",
       border: "#EBE0C4",
       boxShadow: "#1a2b4c",
     },
   ];
 
+  // const desc =
+  //   "OT was founded by a passionate international school teacher who specialize in preparing students for ACT, EST, and SAT exams. We provide personalized training programs designed to boost confidence, sharpen skills, and open doors to global academic opportunities.";
   const desc =
-    "  Life coach  was founded by a team of passionate and experienced life coaches who believe in the power of personal transformation. We offer a range of services to help you ignite your inner fire and create a life you love.";
+    "We specialize in preparing international school students for top exams like ACT, EST, and SAT. Our mission is to build confidence, improve skills, and unlock global opportunities.";
 
   return (
-    <section className="mt-[100px]">
+    <section className="">
       <div className="container">
         <div className="flex justify-center">
           <HighLight text={" Our Top Features"} />
         </div>
         <h2 className="text-xl md:text-2xl font-bold text-center mt-3 font-poppins ">
-          <AnimationText
-            obj={{ text: "Achieve Your Goal With Global Academy" }}
-          />
+          <AnimationText obj={{ text: "Achieve Your Goal With OT" }} />
         </h2>
         <p className="w-[95%] md:w-[55%] mt-3 text-center mx-auto">
           <AnimationText obj={{ text: desc }} />
