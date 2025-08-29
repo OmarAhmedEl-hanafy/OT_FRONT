@@ -170,8 +170,10 @@ function Achievement() {
           <h2 className="text-4xl font-bold">
             Our <span className="text-second-color">Achievement</span>
           </h2>
-          <p className="mt-2">
-            Various versions have evolved over the years, sometimes by accident,
+          <p className="mt-2 w-full md:w-2/3 mx-auto">
+            Over the years, we’ve guided students to excel in SAT, ACT, and EST
+            exams, supported smooth transitions to the American Diploma, and
+            celebrated countless academic success stories,
           </p>
         </div>
 
