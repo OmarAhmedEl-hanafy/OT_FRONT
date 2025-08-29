@@ -4,6 +4,14 @@ import ButtonMore from "../ButtonMore/ButtonMore";
 import HighLight from "../HighLight/HighLight";
 import Consult from "./Consult";
 
+// Personalized Study Plans – Tailored strategies to fit every student’s learning style.
+
+// Exam Guidance – Step-by-step coaching for SAT, ACT, and EST success.
+
+// Diploma Support – Smooth transition to the American Diploma system.
+
+// Ongoing Mentorship – Continuous follow-up to track progress and boost confidence.
+
 function FreeConsulting() {
   const consults = [
     {
@@ -29,7 +37,7 @@ function FreeConsulting() {
           />
         </svg>
       ),
-      text: "Life Coach",
+      text: "Personalized Study Plans",
     },
     {
       icon: (
@@ -54,7 +62,7 @@ function FreeConsulting() {
           />
         </svg>
       ),
-      text: "Relationchip Coach",
+      text: "Exam Guidance",
     },
     {
       icon: (
@@ -71,7 +79,7 @@ function FreeConsulting() {
           />
         </svg>
       ),
-      text: "Team Work coach",
+      text: "Diploma Support",
     },
     {
       icon: (
@@ -107,7 +115,7 @@ function FreeConsulting() {
           />
         </svg>
       ),
-      text: "Business Coach",
+      text: "Ongoing Mentorship",
     },
   ];
 
@@ -139,9 +147,9 @@ function FreeConsulting() {
             <h2 className="text-2xl font-bold">Join Our Global Academy</h2>
 
             <p className="my-3 pr-10 md:pr-28">
-              provides consultations that help individuals achieve their
-              personal and professional goals by developing their skills and
-              increasing their self-awareness.
+              provides consultations that personalized study plans, expert exam
+              guidance for SAT, ACT, and EST, full support for American Diploma
+              transition, and continuous mentorship to ensure student success
             </p>
 
             <div className="grid md:grid-cols-2 gap-5">

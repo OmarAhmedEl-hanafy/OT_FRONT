@@ -35,7 +35,7 @@ function PopularCourses() {
         {/* <h2 className="text-[#FD661F] font-bold mt-10 ml-5 animate-bounce"></h2> */}
 
         <div className="mt-[70px]">
-          <TabsHome imgsCourses={imgsCourses} courses={courses} inHome = {true} />
+          <TabsHome imgsCourses={imgsCourses} courses={courses} inHome={true} />
         </div>
       </div>
     </section>

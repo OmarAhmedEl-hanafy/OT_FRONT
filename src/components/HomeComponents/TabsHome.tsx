@@ -3,10 +3,9 @@ import Course from "../Courses/Course";
 import { useState } from "react";
 
 export default function TabsHome({ courses, inHome }: any) {
-
   const [coursesTabs] = useState([
     {
-      name: "Online Courses",
+      name: "EST Courses",
       // courses: [
       //   {
       //     courseId: 1,
@@ -57,15 +56,15 @@ export default function TabsHome({ courses, inHome }: any) {
       //     category: "Online Courses",
       //   },
       // ],
-      courses : courses?.data
+      courses: courses?.data,
     },
     {
-      name: "Live courses",
-      courses : courses?.data
+      name: "ACT Courses",
+      courses: courses?.data,
     },
     {
-      name: "Consulting",
-      courses : courses?.data
+      name: "SAT Courses",
+      courses: courses?.data,
     },
   ]);
 
@@ -88,9 +87,9 @@ export default function TabsHome({ courses, inHome }: any) {
             {coursesTabs.map(({ name, courses }) => (
               <TabPanel key={name} className="rounded-xl bg-white/5 p-3">
                 <div className="grid gap-3 gap-y-7 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  {courses?.map((course:any) => (
+                  {courses?.map((course: any) => (
                     <div className="" key={course.courseId}>
-                      <Course course={course} inHome = {inHome} />
+                      <Course course={course} inHome={inHome} />
                     </div>
                   ))}
                 </div>
