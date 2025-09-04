@@ -172,6 +172,134 @@
 
 // export default Login;
 
+// /* eslint-disable @typescript-eslint/no-explicit-any */
+// import { Button } from "@material-tailwind/react";
+// import signImg from "../../assets/images/OT/OT_Logo.png";
+// import Logo from "../../components/Logo/Logo";
+// import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
+// import { useFormik } from "formik";
+// import axios from "axios";
+// import { toast } from "react-toastify";
+// import InputComponent from "../../components/Inputs/InputComponent";
+// import InputPass from "../../components/Inputs/InputPass";
+// // import SocialLoginSection from "../../components/Inputs/SocialLoginSection";
+
+// function Login() {
+//   const [loading, setLoading] = useState(false);
+//   const navigate = useNavigate();
+//   //   const [errorLogin,setErrorLogin] = useState('');
+
+//   function sendDataToApi(values: any) {
+//     axios
+//       .post(`${import.meta.env.VITE_APP_API_URL}/User/authenticate`, values)
+//       .then(({ data }) => {
+//         localStorage.setItem("dataAuth", JSON.stringify(data));
+//         console.log(data);
+
+//         if (data.role == "Admin" || data.role == "Active") {
+//           navigate("/dashboard/main-dashboard");
+//         } else {
+//           navigate("/home");
+//         }
+//         setLoading(false);
+//       })
+//       .catch((error) => {
+//         // setErrorLogin(error.response.data.message);
+//         toast.error(error.response.data.message || "Error in Login");
+//         setLoading(false);
+//       });
+//   }
+
+//   const login = useFormik({
+//     initialValues: {
+//       email: "",
+//       password: "",
+//     },
+//     onSubmit: (values) => {
+//       const valuesAuth = {
+//         username: values.email,
+//         password: values.password,
+//       };
+//       setLoading(true);
+//       console.log(values);
+
+//       sendDataToApi(valuesAuth);
+//     },
+//   });
+
+//   return (
+//     <section className="bg-white flex items-center">
+//       <div className="container">
+//         <div className="grid md:grid-cols-7 justify-between md:gap-5 lg:gap-16">
+//           <div className="p-5 md:p-0 col-span-7 md:pt-5 md:col-span-3">
+//             <div className="pt-12">
+//               <Logo />
+//             </div>
+
+//             <h1 className="text-4xl font-bold pl-3 mt-2">Login</h1>
+//             <p className="pl-3 mt-2">Login to access your Global Account</p>
+
+//             <div className="sign-up-form">
+//               <form
+//                 onSubmit={login.handleSubmit}
+//                 onChange={login.handleChange}
+//                 className="mt-10"
+//               >
+//                 <div className="grid md:grid-cols-1 mt-4">
+//                   <div className="">
+//                     <InputComponent
+//                       value={login.values.email}
+//                       handleChange={login.handleChange}
+//                       label="Email"
+//                       name="email"
+//                       placeholder="Email"
+//                       type="email"
+//                     />
+//                   </div>
+//                 </div>
+//                 <div className="grid md:grid-cols-1 mt-4">
+//                   <InputPass
+//                     value={login.values.password}
+//                     handlechange={login.handleChange}
+//                     label="Password"
+//                     name="password"
+//                     placeholder="Password"
+//                     error={undefined}
+//                   />
+//                 </div>
+//                 <div className="grid md:grid-cols-1 mt-4">
+//                   <Button
+//                     type="submit"
+//                     className="!bg-main-color flex justify-center"
+//                     loading={loading}
+//                     placeholder={""}
+//                     fullWidth
+//                   >
+//                     Login
+//                   </Button>
+//                 </div>
+//               </form>
+
+//               {/* Social Signup Section */}
+//               {/* <div className="login-container social-signup bounce-animation">
+//                 <SocialLoginSection />
+//               </div> */}
+//             </div>
+//           </div>
+//           <div className="hidden md:block col-span-7 md:col-span-4">
+//             <div className="img-sign h-[715px] overflow-hidden">
+//               <img className="" src={signImg} alt="SignIn" />
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+// export default Login;
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from "@material-tailwind/react";
 import signImg from "../../assets/images/OT/OT_Logo.png";
@@ -192,25 +320,37 @@ function Login() {
 
   function sendDataToApi(values: any) {
     axios
-      .post(`${import.meta.env.VITE_APP_API_URL}/User/authenticate`, values)
-      .then(({ data }) => {
-        localStorage.setItem("dataAuth", JSON.stringify(data));
-        console.log(data);
+      .post(`${import.meta.env.VITE_APP_API_URL}/signin/`, values) // 👈 تأكد لو محتاج /signin/ بدل signin
+      .then((res) => {
+        const data = res?.data;
 
-        if (data.role == "Admin" || data.role == "Active") {
+        if (!data) {
+          toast.error("Unexpected response from server");
+          setLoading(false);
+          return;
+        }
+
+        localStorage.setItem("dataAuth", JSON.stringify(data));
+        console.log("Login success:", data);
+
+        if (data.role === "Admin" || data.role === "Active") {
           navigate("/dashboard/main-dashboard");
         } else {
           navigate("/home");
         }
+
         setLoading(false);
       })
       .catch((error) => {
-        // setErrorLogin(error.response.data.message);
-        toast.error(error.response.data.message || "Error in Login");
+        console.error("Login error:", error);
+
+        const errorMsg =
+          error.response?.data?.message || "Error in Login, please try again";
+        toast.error(errorMsg);
+
         setLoading(false);
       });
   }
-
   const login = useFormik({
     initialValues: {
       email: "",
@@ -218,7 +358,7 @@ function Login() {
     },
     onSubmit: (values) => {
       const valuesAuth = {
-        username: values.email,
+        email: values.email,
         password: values.password,
       };
       setLoading(true);

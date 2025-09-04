@@ -437,7 +437,7 @@ const Navbar = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
               <li>
                 <NavLink
                   end
-                  to="/auth/login"
+                  to="/signin/"
                   className="btn btn-white text-main-color bg-white block py-2 px-4"
                   data-content="LOG IN"
                 >
@@ -446,7 +446,7 @@ const Navbar = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
               </li>
               <li>
                 <NavLink
-                  to="/auth/register"
+                  to="/signup"
                   className="btn btn-main text-white bg-main-color block py-2 px-4"
                   data-content="SIGN UP"
                 >

@@ -7,7 +7,7 @@ import Blog from "./pages/Blog/Blog";
 import LoadingPage from "./components/LoadingPage/LoadingPage";
 import SingleCourse from "./pages/Courses/SingleCourse";
 import CoursesLayout from "./layouts/CoursesLayout";
-import AuthLayout from "./layouts/AuthLayout";
+// import AuthLayout from "./layouts/AuthLayout";
 import SignUP from "./pages/SignUp/SignUP";
 import { ToastContainer } from "react-toastify";
 import NotFound from "./components/NotFound/NotFound";
@@ -77,10 +77,10 @@ function App() {
           <Route path="Cart" element={<AddCart />} />
         </Route>
 
-        <Route path="/auth" element={<AuthLayout />}>
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<SignUP />} />
-        </Route>
+        {/* <Route path="/auth" element={<AuthLayout />}> */}
+        <Route path="signin" element={<Login />} />
+        <Route path="signup" element={<SignUP />} />
+        {/* </Route> */}
 
         <Route path="ForgotPassword" element={<ForgotPassword />} />
         <Route path="SetPassword" element={<SetPassword />} />
