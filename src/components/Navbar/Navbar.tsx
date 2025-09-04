@@ -256,8 +256,8 @@ const Navbar = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
         : "";
       setToken(userToken);
       // Assuming username is stored in localStorage or fetched from token
-      const user = JSON.parse(localStorage.getItem("user") || "{}");
-      setUsername(user?.name || "B");
+      const user = JSON.parse(localStorage.getItem("first_name") || "{}");
+      setUsername(user?.name || "O");
     }, []);
 
     // Handle scroll for navbar styling
