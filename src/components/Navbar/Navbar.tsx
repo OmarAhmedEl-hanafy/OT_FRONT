@@ -256,7 +256,7 @@ const Navbar = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
         : "";
       setToken(userToken);
       // Assuming username is stored in localStorage or fetched from token
-      const user = JSON.parse(localStorage.getItem("first_name") || "{}");
+      const user = JSON.parse(localStorage.getItem("last_name") || "{}");
       setUsername(user?.name || "T");
     }, []);
 
