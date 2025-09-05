@@ -1,4 +1,7 @@
 /* Section1 styling */
+* {
+  box-sizing: 0;
+}
 .section1 {
   /* padding-top: 90px; */
   background-color: #f9f9f9;
@@ -8,7 +11,7 @@
 }
 
 .section1.visible {
-  padding-top: 120px;
+  padding-top: 90px;
   opacity: 1;
   transform: translateY(0);
 }
@@ -192,35 +195,48 @@
   }
 
   .image-content {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 230px;
-    left: 120px;
+    left: 120px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
   }
   .profile-image {
     height: auto; /* Ensure the height adjusts based on content */
-    min-height: 350px;
+    min-height: 450px;
     max-width: 100%; /* Make it responsive */
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
   }
 
   .student-info {
-    position: relative;
-    bottom: 20px;
+    bottom: 0;
+    margin-top: 10px;
+    text-align: center;
     left: 0;
-    margin-top: 20px;
+  }
+
+  .students-images {
+    justify-content: center; /* في النص */
+    gap: 6px;
   }
 
   .students-images img {
-    margin-right: 5px;
+    width: 30px;
+    height: 30px;
   }
 
   .more-students {
-    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.75rem;
   }
 }
 

@@ -27,6 +27,7 @@ import AddCart from "./pages/AddCart";
 
 // const Home = lazy(() => import("./pages/Home/Home"));
 const Courses = lazy(() => import("./pages/Courses/Courses"));
+import "./App.css";
 
 function App() {
   return (

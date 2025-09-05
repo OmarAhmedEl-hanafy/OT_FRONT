@@ -52,10 +52,9 @@ function AboutUs() {
       <div className="container">
         {" "}
         {/* Bootstrap container */}
-        <div className="row content-wrapper">
-          <div className="col-md-6 text-content">
-            {" "}
-            {/* Bootstrap grid */}
+        <div className="row content-wrapper align-items-center">
+          {/* Text Section */}
+          <div className="col-12 col-md-6 text-content text-center text-md-start mb-4 mb-md-0">
             <h5 className="small-heading">
               We are The Best ــــــــــــــــــــــــــ
             </h5>
@@ -72,11 +71,13 @@ function AboutUs() {
               <button className="cta-button">Try Free Lessons</button>
             </div>
           </div>
-          <div className="col-md-6 image-content">
-            <div className="profile-image" />
+
+          {/* Image Section */}
+          <div className="col-12 col-md-6 image-content text-center">
+            <div className="profile-image mx-auto mb-3" />
             <div className="student-info">
-              <p>200+ students Online</p>
-              <div className="students-images">
+              <p className="mb-2">200+ students Online</p>
+              <div className="students-images d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
                 <img src={P1} alt="Student 1" />
                 <img src={P2} alt="Student 2" />
                 <img src={P3} alt="Student 3" />

@@ -335,6 +335,18 @@
 
 /* Responsive Layout */
 @media (max-width: 768px) {
+  .coach-lessons-info {
+    width: 90px; /* أصغر شوية للموبايل */
+    font-size: 0.65rem; /* نص أصغر */
+    top: 150px; /* إلغاء الـ top */
+    left: -20px; /* إلغاء الـ left */
+  }
+
+  .coach-lessons-info img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px; /* يبقى تحت الأيقونة */
+  }
   .coach-content-wrapper {
     flex-direction: column;
     text-align: center;
